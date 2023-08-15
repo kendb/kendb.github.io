@@ -1,0 +1,22 @@
+body {
+    text-align: center;
+    background-color: rgb(147, 235, 235);
+    max-width: 666px;
+    margin: auto;
+    padding: 6px;
+}
+#entries {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+#expand {
+    flex-basis: 50%;
+    flex:1 0 100%;
+    padding: 5px;
+}
+#entrytext {
+    border: 4px solid rgba(47, 95, 114, 0.342);
+    padding: 10px;
+}

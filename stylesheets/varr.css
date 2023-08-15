@@ -1,0 +1,53 @@
+body {
+    background-image: url("https://cdn.discordapp.com/attachments/966942472334893119/975791186218483712/dancy_v2_trans.gif");
+    background-size: 25%;
+    background-color: rgb(52, 56, 71);
+    text-align: center;
+}
+
+#upper {
+    padding: 1px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgb(255, 107, 206);
+    text-align: center;
+    text-shadow: 3px 1px black, 0px 0px 10px rgb(0, 255, 85);
+}
+
+#imgs {
+    padding-top: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(128, 137, 163, 0.548);
+    padding-bottom: 1%;
+}
+img {
+    
+    max-height: 280px;
+    outline: 2px solid black;
+    outline-offset: -3px;
+    padding: 3px;
+    
+}
+a {
+    margin:0 0 14px 0;
+    text-decoration: none;
+    color: rgb(0, 255, 128);
+    background-color: rgba(37, 42, 58, 0.767);
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-family: "Helvetica Neue", "Arial", sans-serif;
+    text-shadow: 1px 1px black, 0px 0px 10px black;
+}
+#epic {
+    background-color: rgba(128, 137, 163, 0.8);
+    color: crimson;
+}
+#killbutton {
+    opacity: 90%;
+    bottom: 8px;
+    right: 5px;
+    position: fixed;
+}
