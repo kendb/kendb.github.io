@@ -1,38 +1,40 @@
-@font-face{
-	font-family: "opendyslexic";
-	src: url('/fonts/OpenDyslexic-Regular.otf');
-	font-style: normal;
-	font-weight: normal;
+@font-face {
+    font-family: "opendyslexic";
+    src: url('/fonts/OpenDyslexic-Regular.otf');
+    font-style: normal;
+    font-weight: normal;
 }
-@font-face{
-	font-family: "opendyslexic";
-	src: url('/fonts/OpenDyslexic-Italic.otf');
-	font-style: italic;
-	font-weight: normal;
+@font-face {
+    font-family: "opendyslexic";
+    src: url('/fonts/OpenDyslexic-Italic.otf');
+    font-style: italic;
+    font-weight: normal;
 }
-@font-face{
-	font-family: "opendyslexic";
-	src: url('/fonts/OpenDyslexic-Bold.otf');
-	font-weight: bold;
-	font-style: normal;
+@font-face {
+    font-family: "opendyslexic";
+    src: url('/fonts/OpenDyslexic-Bold.otf');
+    font-weight: bold;
+    font-style: normal;
 }
-@font-face{
-	font-family: "opendyslexic";
-	src: url('/fonts/OpenDyslexic-BoldItalic.otf');
-	font-weight: bold;
-	font-style: italic;
+@font-face {
+    font-family: "opendyslexic";
+    src: url('/fonts/OpenDyslexic-BoldItalic.otf');
+    font-weight: bold;
+    font-style: italic;
 }
-
 body {
     font-family: "opendyslexic" !important;
-    text-shadow: 0px 0px 10px black;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
     font-size: 20px;
     color: rgb(255, 255, 255);
     text-align: center;
-    background-color: rgb(106, 187, 187);
-    max-width: 80%;
+    background-image: url(/bg.png);
+    background-color: rgba(105, 45, 68, 0.438);
+    background-size: 24px;
+    image-rendering: pixelated;
     margin: auto;
-    padding: 6px;
+    padding: 20px;
+    animation: sillyborder 50s linear infinite;
 }
 #entriesNormal {
     display: none;
@@ -52,11 +54,14 @@ body {
 img {
     height: 150px;
     width: 150px;
+    border-radius: 5px;
 }
 #album {
+    margin: .4rem ;
     width: 150px;
     height: 150px;
-    padding: 10px;
+    border: rgba(121, 72, 72, 0.548)6px outset;
+    border-radius: 10px;
 }
 a#leftLink {
     float: left;
@@ -71,11 +76,25 @@ a#rightLink {
     left: 55%;
 }
 button {
-    height: 25px;
+    height: 45px;
+    font-size: 14px;
     font-family: "opendyslexic" !important;
-    background-color: rgb(228, 255, 251);
-    border: none;
-    border-radius: 4px;
+    color: rgb(255, 255, 255);
+    background-color:rgba(168, 106, 121, 0.452);
+    text-shadow: 2px 2px 1px rgb(0, 0, 0);
+    border-radius: 10px;
     cursor: pointer;
-    padding: 2px;
+    border: rgba(121, 72, 72, 0.548)6px outset;
+
+}
+#lfm {
+    color: rgb(255, 180, 205);
+}
+@keyframes sillyborder {
+    0% {
+        background-position: 0% 0vh;
+    }
+    100% {
+        background-position: 0% 150vh;
+    }
 }

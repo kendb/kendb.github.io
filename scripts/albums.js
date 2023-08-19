@@ -1,5 +1,5 @@
 function hideButtons() {
-    const albums = document.querySelectorAll("a");
+    const albums = document.querySelectorAll("a#rightLink, a#leftLink");
     albums.forEach( e => {
         e.style.display = "none";
       });
