@@ -1,4 +1,9 @@
 body {
-    background-color: rgb(177, 110, 177);
-    color: lightpink;
+    background-color: rgb(177, 110, 147);
+    font-size: large;
+}
+a,p {
+    color:rgb(252, 223, 255);
+    padding: 15px;
+    margin: auto;
 }
