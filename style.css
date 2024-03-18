@@ -4,6 +4,16 @@ body {
 }
 a,p {
     color:rgb(252, 223, 255);
-    padding: 15px;
-    margin: auto;
+}
+#links {
+    padding: 10px;
+}
+#lastfm {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+#lastfmp {
+    display: block; width: 100%;
 }
