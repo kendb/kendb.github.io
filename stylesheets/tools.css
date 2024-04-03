@@ -1,5 +1,7 @@
 body {
-    background-color: rgb(218, 176, 214)
+    background-color: rgb(218, 176, 214);
+    font-family: "verdana" !important;
+    color: black;
 }
 #tools {
     display:  flex;
@@ -12,8 +14,8 @@ body {
     padding: 5px;
 }
 #toolT {
-    font-size: 20px;
+    font-size: 17px;
 }
 #toolD {
-
+    font-size: 90%;
 }
