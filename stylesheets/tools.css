@@ -1,21 +1,60 @@
 body {
-    background-color: rgb(218, 176, 214);
+    background-color: rgb(243, 195, 229);
     font-family: "verdana" !important;
     color: black;
+}
+#toptext {
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 5px;
+}
+.catLinks {
+    padding: 5px;
+    margin: 6px;
+    outline: dotted rgba(0, 0, 0, 0.288) 1px;
+    outline-offset: -5px;
 }
 #tools {
     display:  flex;
     flex-wrap: wrap;
 }
 #liltool {
-    width: 250px;
-    background-color: rgb(241, 203, 233);
-    margin:0 8px 8px 0;
+    width: 300px;
+    border: dotted rgba(0, 0, 0, 0.288) 1px;
     padding: 5px;
+    margin-bottom: 4px;
 }
 #toolT {
     font-size: 17px;
+    
 }
 #toolD {
     font-size: 90%;
+    
+}
+#toolGeneral,#catGeneral {
+    background-color:rgba(251, 255, 0, 0.185);
+}
+#toolGame,#catGame {
+    background-color:rgba(255, 94, 0, 0.185);
+}
+#toolBrowser,#catBrowser {
+    background-color:rgba(174, 0, 255, 0.185);
+}
+#toolServer,#catServer {
+    background-color:rgba(255, 0, 64, 0.185);
+    
+}
+#toolGeneral,#toolGame,#toolBrowser,#toolServer {
+    margin: 6px;
+    padding: 5px;
+    overflow-y: scroll;
+    height: 500px;
+    scrollbar-width: thin;
+    border-radius: 10px;
+    
+}
+#catGeneral,#catGame,#catBrowser,#catServer {
+    padding: 12px;
+    border-radius: 5px;
 }

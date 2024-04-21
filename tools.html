@@ -12,146 +12,193 @@
   </head>
 
   <body>
-    <p>buncha nice tools i use often. i'm sure i'll remember more junk later zzz</p>
+    <p id="toptext">buncha nice tools i use often. i'm sure i'll remember more junk later zzz</p>
+    <br />
+    <div style="display:flex; flex-wrap: wrap;">
+      <a id="catGeneral" class="catLinks" href="#toolGeneral">general</a>
+      <a id="catGame" class="catLinks" href="#toolGame">game-related</a>
+      <a id="catBrowser" class="catLinks" href="#toolBrowser">online/browser</a>
+      <a id="catServer" class="catLinks" href="#toolServer">server</a>
+    </div>
     <br />
     <div id="tools">
-      <div id="liltool">
-        <a id="toolT" href="https://github.com/yt-dlp/yt-dlp" target="_blank">yt-dlp</a>
-        <p id="toolD">for downloading media off tha web.. can do so much with it like using "--cookies-from-browser firefoxorwhatever" for grabbing shit locked behind a login.</p>
-        <p id="toolD">here's my itty bitty config :3 <br />-P "OUTPUT PATH HERE" --recode-video mp4 --exec "AFTER_MOVE:explorer /select,"</p>
+      <div id="toolGeneral">
+        <div id="liltool">
+          <a id="toolT" href="https://github.com/yt-dlp/yt-dlp" target="_blank">yt-dlp</a>
+          <p id="toolD">for downloading media off tha web.. can do so much with it like using "--cookies-from-browser firefoxorwhatever" for grabbing shit locked behind a login.</p>
+          <p id="toolD">here's my itty bitty config :3 <br />-P "OUTPUT PATH HERE" --recode-video mp4 --exec "AFTER_MOVE:explorer /select,"</p>
+        </div>
+        <div id="liltool">
+          <a id="toolT" href="https://ffmpeg.org/" target="_blank">ffmpeg</a>
+          <p id="toolD">yeah</p>  
+        </div>
+        <div id="liltool">
+          <a id="toolT" href="https://ffmpeg-batch.sourceforge.io/" target="_blank">ffmpeg batch av converter</a>
+          <p id="toolD">silly ui for ffmpeg junk. i love presets i love presets i lo</p>  
+        </div>
+        <div id="liltool">
+          <a id="toolT" href="https://avidemux.sourceforge.net/" target="_blank">avidemux</a>
+          <p id="toolD">video editor i use for quickly clipping things before actually throwing em into an editor like premiere or whatever. doesn't re-encode the file if you're just copying which is v nice</p>  
+        </div>
+        <div id="liltool">
+          <a id="toolT" href="https://www.foobar2000.org/" target="_blank">foobar2000</a>
+          <p id="toolD">my beloved music player of choice</p>  
+        </div>
+        <div id="liltool">
+          <a id="toolT" href="https://getsharex.com/" target="_blank">sharex</a>
+          <p id="toolD">world's strongest screenshot soldier; can probably do anything you'd want it to do. <a href="https://twitter.com/ShareX/status/1703405447821009408">recent update enabled the use of ddagrab with the nvenc codec for screen recording</a> so it can grab frames directly from the gpu which i think is pretty neat.</p>  
+        </div>
+        <div id="liltool">
+          <a id="toolT" href="https://learn.microsoft.com/en-us/windows/powertoys/" target="_blank">microsoft powertoys</a>
+          <p id="toolD">nifty collection of tools. i use <a href="https://learn.microsoft.com/en-us/windows/powertoys/powerrename">powerrename</a>, <a href="https://learn.microsoft.com/en-us/windows/powertoys/image-resizer">image resizer</a>
+            , <a href="https://learn.microsoft.com/en-us/windows/powertoys/text-extractor">text extractor</a>, and <a href="https://learn.microsoft.com/en-us/windows/powertoys/file-locksmith">file locksmith</a> a lot</p>  
+        </div>
+        <div id="liltool">
+          <a id="toolT" href="https://github.com/Klocman/Bulk-Crap-Uninstaller" target="_blank">bulk crap uninstaller</a>
+          <p id="toolD">nice bulk program uninstaller :3</p>  
+        </div>
+        <div id="liltool">
+          <a id="toolT" href="https://www.bleachbit.org/" target="_blank">bleachbit</a>
+          <p id="toolD">junk cleaning</p>  
+        </div>
+        <div id="liltool">
+          <a id="toolT" href="https://devtoys.app/" target="_blank">devtoys</a>
+          <p id="toolD">collection of nifty tools. png compressor has been super useful for me.</p>  
+        </div>
+        <div id="liltool">
+          <a id="toolT" href="https://sourceforge.net/projects/peace-equalizer-apo-extension/" target="_blank">peace gui for equalizer apo</a>
+          <p id="toolD">system audio eq. sucks a little that you SOMETIMES have to reconfigure it when windows updates but i've not had to do that in like 10 updates so maybe it's worked out. shrug</p>  
+        </div>
+        <div id="liltool">
+          <a id="toolT" href="https://nomacs.org/" target="_blank">nomacs</a>
+          <p id="toolD">my image viewer of choice. imageglass used to be it but it sucks now! sorry!</p>  
+        </div>
+        <div id="liltool">
+          <a id="toolT" href="https://github.com/clsid2/mpc-hc" target="_blank">mpc-hc</a>
+          <p id="toolD">favorite media player :3 although i have to use mpv whenever i accidentally download hdr content lol</p>  
+        </div>
+        <div id="liltool">
+          <a id="toolT" href="https://github.com/microsoft/terminal" target="_blank">microsoft terminal</a>
+          <p id="toolD">me enjoy. having quake mode on makes downloading stuff with yt-dlp so fucking easy and i enjoy having ssh profiles</p>  
+        </div>
+        <div id="liltool">
+          <a id="toolT" href="https://www.diskanalyzer.com/" target="_blank">wiztree</a>
+          <p id="toolD">windirstat but cooler</p>  
+        </div>
+        <div id="liltool">
+          <a id="toolT" href="https://tailscale.com/" target="_blank">tailscale</a>
+          <p id="toolD">was mostly using this with jellyfin for media streaming to my devices whenever i'm not home but i'm kinda using this for anything i don't wanna risk port forwarding now; super, super nice.</p>  
+        </div>
+        <div id="liltool">
+          <a id="toolT" href="https://7-zip.org/" target="_blank">7-zip</a>
+          <p id="toolD">i love compressing, i love decompressing!! set compression level to ultra right now!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</p>  
+        </div>
+        <div id="liltool">
+          <a id="toolT" href="https://github.com/File-New-Project/EarTrumpet" target="_blank">eartrumpet</a>
+          <p id="toolD">nice volume mixer</p>  
+        </div>
+        <div id="liltool">
+          <a id="toolT" href="https://flacsquisher.sourceforge.io/" target="_blank">flacsquisher</a>
+          <p id="toolD">batch flac re-encoder i used for when i put music on my phone. i heart opus</p>  
+        </div>
+        <div id="liltool">
+          <a id="toolT" href="https://github.com/alexkay/spek" target="_blank">spek</a>
+          <p id="toolD">"acoustic spectrum analyser" honestly i just use this to see if the suspicious flacs i grab are like youtube-to-mp3s in disguise.</p>  
+        </div>
+        <div id="liltool">
+          <a id="toolT" href="https://kaiakairos.itch.io/pngtuber-plus" target="_blank">pngtuber plus</a>
+          <p id="toolD">self-explanatory</p>  
+        </div>
+        <div id="liltool">
+          <a id="toolT" href="https://flashpointarchive.org/" target="_blank">flashpoint</a>
+          <p id="toolD">archive + player of probably all every flash games</p>  
+        </div>
       </div>
-      <div id="liltool">
-        <a id="toolT" href="https://ffmpeg.org/" target="_blank">ffmpeg</a>
-        <p id="toolD">yeah</p>  
+      <div id="toolGame">
+        <div id="liltool">
+          <a id="toolT" href="https://prismlauncher.org/" target="_blank">prism launcher</a>
+          <p id="toolD">nice minecraft launcher</p>  
+        </div>
+        <div id="liltool">
+          <a id="toolT" href="https://vrcfury.com/" target="_blank">vrcfury</a>
+          <p id="toolD">non-destructive vrchat avatar tools. so FUCKING useful man</p>  
+        </div>
+        <div id="liltool">
+          <a id="toolT" href="https://github.com/vrc-get/vrc-get/blob/master/vrc-get-gui/README.md" target="_blank">alcom</a>
+          <p id="toolD">open source alternative to the vrchat creator companion. adding/updating packages is so much faster mannn</p>
+        </div>
+        <div id="liltool">
+          <a id="toolT" href="https://github.com/ebkr/r2modmanPlus" target="_blank">r2modman plus</a>
+          <p id="toolD">mod manager for moddable games that use thunderstore. so NICE!!! fuck the thunderstore app fuck overwolf burn in hell, scum i hope everyone who works at overwolf breaks a toenail in half as often as possible</p>  
+        </div>
+        <div id="liltool">
+          <a id="toolT" href="https://eurekaworks.jp/software/vrhandsframe/en/" target="_blank">vrhandsframe</a>
+          <p id="toolD">nifty vr overlay. translating text stuff locally is nice</p>  
+        </div>
       </div>
-      <div id="liltool">
-        <a id="toolT" href="https://avidemux.sourceforge.net/" target="_blank">avidemux</a>
-        <p id="toolD">video editor i use for quickly clipping things before actually throwing em into an editor like premiere or whatever. doesn't re-encode the file if you're just copying which is v nice</p>  
+      <div id="toolBrowser">
+        <div id="liltool">
+          <a id="toolT" href="https://gist.github.com/yukulele/805c382f371852e8f25efd7b2ec5876a" target="_blank">twitter native video player</a>
+          <p id="toolD">userscript that replaces shitty twitter media player with browser's native one. with firefox, i have to remove "video.focus()" (line 28 at the time of writing) because it scrolls to the bottom of the page for me. shrug works GREAT though love it</p>  
+        </div>
+        <div id="liltool">
+          <a id="toolT" href="https://old.reddit.com/r/imagus/comments/121oop7/imagus_mod_for_firefox_2023/" target="_blank">imagus mod</a>
+          <p id="toolD">hover over media to make it go big mode /show full size. mod is a fork of it with some nice additions.</p>  
+        </div>
+        <div id="liltool">
+          <a id="toolT" href="https://rafradek.github.io/Mishcatt/" target="_blank">vtf spray converter</a>
+          <p id="toolD">spray maker for source games. love them fade sprays</p>  
+        </div>
+        <div id="liltool">
+          <a id="toolT" href="https://ezgif.com/" target="_blank">ezgif.com</a>
+          <p id="toolD">mans best gif friend</p>  
+        </div>
+        <div id="liltool">
+          <a id="toolT" href="https://github.com/insin/control-panel-for-twitter/" target="_blank">control panel for twitter</a>
+          <p id="toolD">so much shit on twitter that i don't need to see. be gone. twitter spaces. leave my sights</p>  
+        </div>
+        <div id="liltool">
+          <a id="toolT" href="https://github.com/AprilSylph/XKit-Rewritten" target="_blank">xkit rewritten</a>
+          <p id="toolD">same as above but for tumblr. yippee!!</p>  
+        </div>
+        <div id="liltool">
+          <a id="toolT" href="https://ruffle.rs/" target="_blank">ruffle</a>
+          <p id="toolD">flash player emulator; god rest its soul</p>  
+        </div>
+        <div id="liltool">
+          <a id="toolT" href="https://github.com/SteamDatabase/BrowserExtension" target="_blank">steamdb extension</a>
+          <p id="toolD">adds some nice info to steam store pages like when something was last on sale and playercount. lets you quicksell things real quick in your inventory too  +rep</p>  
+        </div>
       </div>
-      <div id="liltool">
-        <a id="toolT" href="https://www.foobar2000.org/" target="_blank">foobar2000</a>
-        <p id="toolD">my beloved music player of choice</p>  
-      </div>
-      <div id="liltool">
-        <a id="toolT" href="https://getsharex.com/" target="_blank">sharex</a>
-        <p id="toolD">world's strongest screenshot soldier; can probably do anything you'd want it to do. <a href="https://twitter.com/ShareX/status/1703405447821009408">recent update enabled the use of ddagrab with the nvenc codec for screen recording</a> so it can grab frames directly from the gpu which i think is pretty neat.</p>  
-      </div>
-      <div id="liltool">
-        <a id="toolT" href="https://learn.microsoft.com/en-us/windows/powertoys/" target="_blank">microsoft powertoys</a>
-        <p id="toolD">nifty collection of tools. i use <a href="https://learn.microsoft.com/en-us/windows/powertoys/powerrename">powerrename</a>, <a href="https://learn.microsoft.com/en-us/windows/powertoys/image-resizer">image resizer</a>
-          , <a href="https://learn.microsoft.com/en-us/windows/powertoys/text-extractor">text extractor</a>, and <a href="https://learn.microsoft.com/en-us/windows/powertoys/file-locksmith">file locksmith</a> a lot</p>  
-      </div>
-      <div id="liltool">
-        <a id="toolT" href="https://github.com/Klocman/Bulk-Crap-Uninstaller" target="_blank">bulk crap uninstaller</a>
-        <p id="toolD">nice bulk program uninstaller :3</p>  
-      </div>
-      <div id="liltool">
-        <a id="toolT" href="https://www.bleachbit.org/" target="_blank">bleachbit</a>
-        <p id="toolD">junk cleaning</p>  
-      </div>
-      <div id="liltool">
-        <a id="toolT" href="https://devtoys.app/" target="_blank">devtoys</a>
-        <p id="toolD">collection of nifty tools. png compressor has been super useful for me.</p>  
-      </div>
-      <div id="liltool">
-        <a id="toolT" href="https://sourceforge.net/projects/peace-equalizer-apo-extension/" target="_blank">peace gui for equalizer apo</a>
-        <p id="toolD">system audio eq. sucks a little that you SOMETIMES have to reconfigure it when windows updates but i've not had to do that in like 10 updates so maybe it's worked out. shrug</p>  
-      </div>
-      <div id="liltool">
-        <a id="toolT" href="https://github.com/d2phap/ImageGlass" target="_blank">imageglass</a>
-        <p id="toolD">my image viewer of choice. its cropping tool is super nice.</p>  
-      </div>
-      <div id="liltool">
-        <a id="toolT" href="https://github.com/clsid2/mpc-hc" target="_blank">mpc-hc</a>
-        <p id="toolD">favorite media player :3 although i have to use mpv whenever i accidentally download hdr content lol</p>  
-      </div>
-      <div id="liltool">
-        <a id="toolT" href="https://github.com/microsoft/terminal" target="_blank">microsoft terminal</a>
-        <p id="toolD">me enjoy. having quake mode on makes downloading stuff with yt-dlp so fucking easy and i enjoy having ssh profiles</p>  
-      </div>
-      <div id="liltool">
-        <a id="toolT" href="https://www.diskanalyzer.com/" target="_blank">wiztree</a>
-        <p id="toolD">windirstat but cooler</p>  
-      </div>
-      <div id="liltool">
-        <a id="toolT" href="https://prismlauncher.org/" target="_blank">prism launcher</a>
-        <p id="toolD">nice minecraft launcher</p>  
-      </div>
-      <div id="liltool">
-        <a id="toolT" href="https://tailscale.com/" target="_blank">tailscale</a>
-        <p id="toolD">was mostly using this with jellyfin for media streaming to my devices whenever i'm not home but i'm kinda using this for anything i don't wanna risk port forwarding now; super, super nice.</p>  
-      </div>
-      <div id="liltool">
-        <a id="toolT" href="https://jellyfin.org/" target="_blank">jellyfin</a>
-        <p id="toolD">media server!! yippee!!! i used this to fall asleep to king of the hill for a while. it supports syncplay so i use it to watch things with jebs; not having to deal with discord stream compression is v nice. :3</p>  
-      </div>
-      <div id="liltool">
-        <a id="toolT" href="https://7-zip.org/" target="_blank">7-zip</a>
-        <p id="toolD">i love compressing, i love decompressing!! set compression level to ultra right now!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</p>  
-      </div>
-      <div id="liltool">
-        <a id="toolT" href="https://github.com/File-New-Project/EarTrumpet" target="_blank">eartrumpet</a>
-        <p id="toolD">nice volume mixer</p>  
-      </div>
-      <div id="liltool">
-        <a id="toolT" href="https://flacsquisher.sourceforge.io/" target="_blank">flacsquisher</a>
-        <p id="toolD">batch flac re-encoder i used for when i put music on my phone. i heart opus</p>  
-      </div>
-      <div id="liltool">
-        <a id="toolT" href="https://github.com/alexkay/spek" target="_blank">spek</a>
-        <p id="toolD">"acoustic spectrum analyser" honestly i just use this to see if the suspicious flacs i grab are like youtube-to-mp3s in disguise.</p>  
-      </div>
-      <div id="liltool">
-        <a id="toolT" href="https://kaiakairos.itch.io/pngtuber-plus" target="_blank">pngtuber plus</a>
-        <p id="toolD">self-explanatory</p>  
-      </div>
-      <div id="liltool">
-        <a id="toolT" href="https://gist.github.com/yukulele/805c382f371852e8f25efd7b2ec5876a" target="_blank">twitter native video player</a>
-        <p id="toolD">userscript that replaces shitty twitter media player with browser's native one. with firefox, i have to remove "video.focus()" (line 28 at the time of writing) because it scrolls to the bottom of the page for me. shrug works GREAT though love it</p>  
-      </div>
-      <div id="liltool">
-        <a id="toolT" href="https://old.reddit.com/r/imagus/comments/121oop7/imagus_mod_for_firefox_2023/" target="_blank">imagus mod</a>
-        <p id="toolD">hover over media to make it go big mode /show full size. mod is a fork of it with some nice additions.</p>  
-      </div>
-      <div id="liltool">
-        <a id="toolT" href="https://vrcfury.com/" target="_blank">vrcfury</a>
-        <p id="toolD">non-destructive vrchat avatar tools. so FUCKING useful man</p>  
-      </div>
-      <div id="liltool">
-        <a id="toolT" href="https://github.com/ebkr/r2modmanPlus" target="_blank">r2modman plus</a>
-        <p id="toolD">mod manager for moddable games that use thunderstore. so NICE!!! fuck the thunderstore app fuck overwolf burn in hell, scum i hope everyone who works at overwolf breaks a toenail in half as often as possible</p>  
-      </div>
-      <div id="liltool">
-        <a id="toolT" href="https://caddyserver.com/" target="_blank">caddy</a>
-        <p id="toolD">server!! i use this to reverse-proxy all of my docker stuff, so SIMPLE so NICE</p>  
-      </div>
-      <div id="liltool">
-        <a id="toolT" href="https://github.com/m1k1o/neko" target="_blank">neko</a>
-        <p id="toolD">sorta just a self-hostable rabb.it instance</p>  
-      </div>
-      <div id="liltool">
-        <a id="toolT" href="https://github.com/Cog-Creators/Red-DiscordBot" target="_blank">discord redbot</a>
-        <p id="toolD">self-hostable discord bot. community has lots of fun plugins/"cogs" like <a href="https://github.com/TrustyJAID/Trusty-cogs/blob/master/retrigger/README.md">retrigger</a>, <a href="https://github.com/Flame442/FlameCogs/blob/master/README.md#deepfry">deepfry</a>, and <a href="https://github.com/TrustyJAID/Trusty-cogs/blob/master/notsobot/README.md">notsobot</a></p> 
-      </div>
-      <div id="liltool">
-        <a id="toolT" href="https://cobalt.tools/" target="_blank">cobalt.tools</a>
-        <p id="toolD">in-browser media downloader that can be self-hosted</p>  
-      </div>
-      <div id="liltool">
-        <a id="toolT" href="https://flashpointarchive.org/" target="_blank">flashpoint</a>
-        <p id="toolD">archive + player of probably all every flash games</p>  
-      </div>
-      <div id="liltool">
-        <a id="toolT" href="https://rafradek.github.io/Mishcatt/" target="_blank">vtf spray converter</a>
-        <p id="toolD">spray maker for source games. love them fade sprays</p>  
-      </div>
-      <div id="liltool">
-        <a id="toolT" href="https://www.home-assistant.io/" target="_blank">home assistant</a>
-        <p id="toolD">controlling my smart stuff like lights n junk without having to rely on an app/cloud service is crucial to me</p>  
-      </div>
-      <div id="liltool">
-        <a id="toolT" href="https://github.com/louislam/uptime-kuma" target="_blank">uptime kuma</a>
-        <p id="toolD">for tracking when my docker containers / services are down. nice being able to be notified via discord bot</p>  
+      <div id="toolServer">
+        <div id="liltool">
+          <a id="toolT" href="https://jellyfin.org/" target="_blank">jellyfin</a>
+          <p id="toolD">media server!! yippee!!! i used this to fall asleep to king of the hill for a while. it supports syncplay so i use it to watch things with jebs; not having to deal with discord stream compression is v nice. :3</p>  
+        </div>
+        <div id="liltool">
+          <a id="toolT" href="https://caddyserver.com/" target="_blank">caddy</a>
+          <p id="toolD">server!! i use this to reverse-proxy all of my docker stuff, so SIMPLE so NICE</p>  
+        </div>
+        <div id="liltool">
+          <a id="toolT" href="https://github.com/m1k1o/neko" target="_blank">neko</a>
+          <p id="toolD">sorta just a self-hostable rabb.it instance</p>  
+        </div>
+        <div id="liltool">
+          <a id="toolT" href="https://github.com/Cog-Creators/Red-DiscordBot" target="_blank">discord redbot</a>
+          <p id="toolD">self-hostable discord bot. community has lots of fun plugins/"cogs" like <a href="https://github.com/TrustyJAID/Trusty-cogs/blob/master/retrigger/README.md">retrigger</a>, <a href="https://github.com/Flame442/FlameCogs/blob/master/README.md#deepfry">deepfry</a>, and <a href="https://github.com/TrustyJAID/Trusty-cogs/blob/master/notsobot/README.md">notsobot</a></p> 
+        </div>
+        <div id="liltool">
+          <a id="toolT" href="https://cobalt.tools/" target="_blank">cobalt.tools</a>
+          <p id="toolD">in-browser media downloader that can be self-hosted</p>  
+        </div>
+        <div id="liltool">
+          <a id="toolT" href="https://www.home-assistant.io/" target="_blank">home assistant</a>
+          <p id="toolD">controlling my smart stuff like lights n junk without having to rely on an app/cloud service is crucial to me</p>  
+        </div>
+        <div id="liltool">
+          <a id="toolT" href="https://github.com/louislam/uptime-kuma" target="_blank">uptime kuma</a>
+          <p id="toolD">for tracking when my docker containers / services are down. nice being able to be notified via discord bot</p>  
+        </div>
       </div>
       <!-- <div id="liltool">
         <a id="toolT" href="" target="_blank"></a>
