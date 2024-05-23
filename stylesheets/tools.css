@@ -3,6 +3,11 @@ body {
     font-family: "verdana" !important;
     color: black;
 }
+#back {
+    position: fixed;
+    bottom: 2%;
+    right: 1%;
+}
 #toptext {
     padding-left: 12px;
     padding-right: 12px;
