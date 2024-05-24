@@ -64,9 +64,13 @@ a,p {
     top: 0;
     left: 0;
     z-index: -1;
+    width: 585px;
+    height: 432px;
 }
 #corners {
     position: fixed;
+    width: 76px;
+    height: 75px;
     top: 266px;
     left: 8px;
     z-index: 1;
