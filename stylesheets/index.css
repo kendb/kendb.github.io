@@ -1,0 +1,14 @@
+body {
+    background: radial-gradient(circle at center,rgb(0, 0, 0) 15%,rgb(51, 30, 7));
+    overflow: hidden;
+    margin: 0;
+}
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+img {
+    width: 99px;
+}

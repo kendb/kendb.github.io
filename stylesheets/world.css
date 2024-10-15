@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    animation: infinite linear alternate gay 1s;
+}
+#bgdiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#bgimg {
+    max-height: 100vh;
+    z-index: -1;
+}
+#buttn {
+    max-width: 88px;
+    max-height: 31px;
+    position: fixed;
+}
+#oops {
+    position: fixed;
+    top: 4%;
+    right: 5%;
+}
+#lastfm { 
+    position: absolute;
+    left: 50%;
+    top: 0;
+    border: rgb(146, 59, 81) 5px dashed;
+}
+#creatures {
+    font-family: cursive;
+    font-size: 200%;
+    text-shadow: 2px 2px black;
+    position: fixed;
+    top: 10%;
+    left: 35vw;
+    animation: fontcolor2 alternate infinite linear 1s;
+    rotate: -25deg;
+}
+#tools {
+    font-family: cursive;
+    text-shadow: 2px 2px black;
+    font-size: 200%;
+    position: fixed;
+    top: 66%;
+    left: 35vw;
+    animation: fontcolor alternate infinite linear 1s;
+    rotate: 15deg;
+}
+@keyframes gay {
+    0% {background: radial-gradient(#800000, #510fbd);}
+    100% {background: radial-gradient(#4c00ff, #800000);}
+}
+@keyframes fontcolor {
+    0% {color:blue;}
+    100% {color:red;}
+}
+@keyframes fontcolor2 {
+    0% {color:rgb(255, 0, 0);}
+    100% {color:rgb(47, 0, 255);}
+}
