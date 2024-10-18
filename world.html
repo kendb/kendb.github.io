@@ -10,15 +10,30 @@
     <meta property="og:description" content="my world, it spins" />
     <link rel="stylesheet" href="/stylesheets/world.css">
     <script src="scripts/listening.js"></script>
+    <script src="/scripts/randpos.js"></script>
   </head>
 
   <body>
+    <a id="killanim" onclick="this.remove()">
+      <img src="data:image/webp;base64,UklGRuYBAABXRUJQVlA4WAoAAAAQAAAAewAAOwAAQUxQSGUBAAABDzD/ERFCkrb/baN8esQzGpr0sGsmucLsSPcVOIpDTc+f6h0cgMto6OUSomZHzK5Hi1hDh21E/yeAX1/mW8rniRDV3vknS0l9jPpjXMdrUdWN8DFOgo5H6zJ8VD2vnzRTVGSizaButmUxplf3UdW4VGUIWKxL+GYiq2NRVzYSH1Wggd24hNcBi4sqIS6Q4SzpZiDz5iC9QLbRqcAoMNqoVNUtAh9PkApxGZSHRkKqPCjgUAII/Dd6fRADVBp2E263biGAaONmMGLLyDnRxs6gB0TvfLx2Q9uFVw1gFc6GFzfKA2UFptR2E7Agq5dZgSu1W1cY8A8+tFrcKbVdF1KC3x+2ChpPtFsV8voeYX/YGpE9UTurobyMKsjFVrFlnoxF14wSXdENKukWgWyFKbuiHYXkRVD2PcbkYnYYkVcvP7kNpc7lrqFFXvmoFnjdJGp6DCpZMkO0ZQM9TsJJ9tg+CSf50wIAVlA4IFoAAADwBQCdASp8ADwAPpFGnkslo6KhpggAsBIJaQAALlWF4frt1S1S9whIjiWmE8uUzL3Q3hMWdaiNAAD++M7vbE9PW+mxppK5xLqCE4sELGjFhv/9AgABtQAAAAA=">
+    </a>
+    <a id="killbuttons" style="display: none;" onclick="this.remove();">
+      <img src="data:image/webp;base64,UklGRrABAABXRUJQVlA4WAoAAAAQAAAAewAAOwAAQUxQSD8BAAABDzD/ERECjrT9i5Nv58dMfP+UtrN7BrpfETsIdgR3+/AuXIEjUFI6dOEKwTurHCKb/BevI/o/Afj+7ZG8b+FRLLJNHJutngh6PwSfsHkagqHYLA7C0LF4MhXEdq0kEqIoBilWU9iN8IRKlFSFUrYKKqyengStdqqVpepK1bTSjwOnFx8xi/s9B9aKqNH+vZTPYqjigAZgbP+hGrp3wAI6WK2+BpWYiycBq47iY/FF3kxQzAI8EMW2oWTdgvoAVwLtYIzilgrqApS8ZkOmlWoWMUqsNOuFVoZajXo+wOqkapPysDcH8HVxShmjuOVh717ACzOlCN2e+bsCrgTN/NszlzFQCkPKGCV/VzEwoEwNZRGjvD3uGrig3A9q6OmR5s2AclPJhYaGuVmNgRvV3YAxCopomwEohd0AoANLGvymAFZQOCBKAAAAEAYAnQEqfAA8AD6RQpxKJaOioakIALASCWkAFt9CS7LZ9Y1AW80JXYNB3lUSfi7HNjo40zCftjKAAP74zxLbz//8aHmDKNcAAAA=">
+    </a>
+    <div id="fireLeft"></div>
+    <div id="fireRight"></div>
     <p id="oops">fuckk sorry my buttons fck im sorry</p>
     <div id="bgdiv">
       <img id="bgimg" src="media/oblibg.webp">
     </div>
     <a id="creatures" href="/creatures/obli">SEE OBLI AND OTHERS</a>
     <a id="tools" href="/tools">COOL COMPUTER TOOLS</a>
+    <div id="credit">
+      <span>BACKGROUND ART BY</span>
+      <a id="creditlink" target="_blank" href="https://windowsmillennium2000.tumblr.com/">
+        <img src="media/buttons2/carriononline.gif"></a>
+      <span>!!!</span>
+    </div>
     <div id="lastfm">
       <p id="lastfmp"></p>
       <img id="lastfmimg">
@@ -395,6 +410,5 @@
         <img src="media/buttons2/carriononline.gif">
       </a>
     </div>
-    <script src="/scripts/randpos.js"></script>
   </body>
 </html>

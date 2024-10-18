@@ -1,6 +1,13 @@
+@font-face {
+    font-family: 'Smash';
+    src: url('smash.ttf') format('truetype');
+}
 body {
     margin: 0;
     animation: infinite linear alternate gay 1s;
+}
+img {
+    image-rendering: pixelated;
 }
 #bgdiv {
     display: flex;
@@ -11,21 +18,24 @@ body {
     max-height: 100vh;
     z-index: -1;
 }
+#killanim,#killbuttons {
+    position: absolute;
+    top: 6px;
+    left: 22px;
+    z-index: 5;
+    background-color:#ffffff8e;
+}
 #buttn {
-    max-width: 88px;
-    max-height: 31px;
+    width: 88px;
+    height: 31px;
     position: fixed;
+    transform-origin: center;
+    z-index: 3;
 }
 #oops {
     position: fixed;
     top: 4%;
     right: 5%;
-}
-#lastfm { 
-    position: absolute;
-    left: 50%;
-    top: 0;
-    border: rgb(146, 59, 81) 5px dashed;
 }
 #creatures {
     font-family: cursive;
@@ -36,6 +46,7 @@ body {
     left: 35vw;
     animation: fontcolor2 alternate infinite linear 1s;
     rotate: -25deg;
+    z-index: 2;
 }
 #tools {
     font-family: cursive;
@@ -46,16 +57,79 @@ body {
     left: 35vw;
     animation: fontcolor alternate infinite linear 1s;
     rotate: 15deg;
+    z-index: 2;
+}
+#credit {
+    z-index: 2;
+    display: inline;
+    font-family: Smash;
+    color: rgb(255, 0, 0);
+    text-shadow: 1px 1px 1px black;
+    rotate: -5deg;
+    font-size: 200%;
+    position: fixed;
+    bottom: 10px;
+    right: 5%;
+    width: 300px;
+    height: 150px;
 }
 @keyframes gay {
     0% {background: radial-gradient(#800000, #510fbd);}
-    100% {background: radial-gradient(#4c00ff, #800000);}
+    100% {background: radial-gradient(#510fbd, #800000);}
 }
 @keyframes fontcolor {
     0% {color:blue;}
     100% {color:red;}
 }
 @keyframes fontcolor2 {
-    0% {color:rgb(255, 0, 0);}
-    100% {color:rgb(47, 0, 255);}
+    0% {color:red;}
+    100% {color:blue;}
+}
+#lastfm { 
+    z-index: 0;
+    position: absolute;
+    left: 24px;
+    bottom: 1%;
+    border: rgb(219, 51, 93) 4px dashed;
+    font-family: cursive;
+    color: rgb(255, 0, 128);
+    text-shadow: 1px 1px black;
+    background-color: #bd0f666b;
+}
+#lastfmp {
+    font-size: 130%;
+}
+#lastfmlink {
+    animation: fontcolor alternate infinite linear 1s;
+    font-size: 130%;
+}
+#lastfmimg {
+    width: 100x;
+    height: 100px;
+    border: rgb(255, 0, 64) 2px dotted;
+}
+#fireLeft {
+    position: absolute;
+    margin: 0;
+    top: 0px;
+    left: 0px;
+    z-index: 5;
+    background-image: url("/media/realFire.gif");
+    background-repeat: repeat-y;
+    background-position: left;
+    width: 22px;
+    height: 100%;
+}
+#fireRight {
+    rotate: 180deg;
+    position: absolute;
+    margin: 0;
+    top: 0px;
+    right: 0px;
+    z-index: 5;
+    background-image: url("/media/realFire.gif");
+    background-repeat: repeat-y;
+    background-position: right;
+    width: 22px;
+    height: 100%;
 }

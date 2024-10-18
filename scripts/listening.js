@@ -4,10 +4,15 @@ function callLastFM() {
     fetch(lastfm).then (response => {
         if (!response.ok) {
             var pooperror = "last.fm api error: " + response.status
+            var poopimgb64 = "data:image/webp;base64,UklGRn4BAABXRUJQVlA4WAoAAAAQAAAAPwAAPwAAQUxQSAsBAAABDzD/ERECcrb/aZufw6wOoNor9BjOKF2BmcK6xQvkyRzlyiXfOgHJxSszV5KbESL6PwEAwCGPQEiZG6ISywoinqQqEcKTLMF9GAoh8UHxzaWSZlMMKd49KJYFeFBVlSY1no5rHKMaBbjjGVA4qtquH0gNoNoIcgMAbwQBgDvMH+W70hKtMjsYwzftMjv4bXyXKNuOfjO3RO3t6BdzC0V7OZrpNQrFzn00023ML3Seo5mN4PRC51rxYbpRcyX4/EFY1FyJXh8SBMyse90jAM0+n9tRwCwOV6MAaLGMaDUJmi0C3AItAhAVHFkAbrL4IABGZkCD0giy8DVwA/WHZklj9o3+q/9UU9RkNQAAVlA4IEwAAAAwBQCdASpAAEAAPpE6l0eloyIhMAgAsBIJaQAAW+s27S2zBIvkyE3sfqncZMDBRB6yAAD+/EOTrsvu/T1ANP/qEsf+3ML/qoAAAAAA"
             poop = document.createElement('p')
             poop.id = "lastfmp"
             poop.textContent = pooperror
+            poopimg = document.createElement('img')
+            poopimg.id = "lastfmimg"
+            poopimg.src = poopimgb64
             document.getElementById("lastfmp").replaceWith(poop)
+            document.getElementById("lastfmimg").replaceWith(poopimg)
             throw new Error("api error status:" + response.status)
         } else {
             return response.json();
@@ -20,7 +25,7 @@ function callLastFM() {
         var trackimg = track.image[1]["#text"]
 
         if (track.image[1]["#text"] == "" || track.image[1]["#text"] == "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png") {
-            var trackimg = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAFxGAABcRgEUlENBAAAAG3RFWHRTb2Z0d2FyZQBDZWxzeXMgU3R1ZGlvIFRvb2zBp+F8AAACjElEQVR4nO2bWXLDMAiG8fQivf+l2oM0oz654xLAP4tkeeGtDZu+IAmTZGmt0Z1leQAAAF7f1D4+aYkEkGwz/qpFBLAm+PqmQ8qDx15haflkYP4BOGqxo0SDtLTWdhe/NUbLl+utMTRfSA6SjrS90LUQES0/X/IhMMsejYgGnwgAcOaFawIDuOLiid63xXadt6sAIgaAH4I9ARx1/x9eAaMAI/F5DqcBkK0eLYfUFkDtPP6te3wqAFZZocERn544lmh+ygBYtoh/zZ8njiVTA/C2uBVVkALg2afexaMVkqmC9BnA9S37KgCIL2/eRB0AcB97C4zeEFMBsJK7DQDt/54tcHkAlv5e7MpDcGtfCkB6raICejZDXQFw8dwCPQagQwBowby6klQ8qPFeoCuATFe5laon1KEVkEmu18ygBEDVgXSETF0BI6QMwFnlAVDVCJ1VLl0BSON0egBrbxFtnKbYApXTJ008zxTDPxmyXvc8V2g2nvgpAJGGKNLySnO8aDNW1glGxtXoxAjJwfKH2qx24jdEPIMJLpHReLaahlcA1/U+HmdHYxF9zebtS1KRsRTyDlaOxxF/qI34LbFsGVeMvoYCqJjLZcbfkYOw6tyAKyBb5p6GJnKlDgWAAOK61XO/qjMDAhBpRyVf1sh8+78eFaDpdwWAnAPRRkjz59V1A9i7+6M3ReRzgG4AuFJVk7IHwGqxpa0R7WBdAKruW48vtBqi/qYHYCWv5Wb5PBRA1pflV4qB2HYHoNlVAPBclVIuPLbrEOw9LustErh/vxm6ykI98gBAtsCVBf7VmNakSDqIbqWg8aQ3VdwCVxbzEFwFHX1ZAaxubnvWWK2v9jcSH5Xnt8MPgJsD+AXjNhO9pUWHaQAAAABJRU5ErkJggg=="
+            var trackimg = "data:image/webp;base64,UklGRvoAAABXRUJQVlA4WAoAAAAQAAAAPwAAPwAAQUxQSKUAAAABDzD/ERECjm3tqaqD/miClToMhymlxKGju0zJBsAU0tGmw59dqXh9RP8ngA8aD9roQsBeq6+Er6G+Q3YC2K6SoJ1o31SL8hkJ0wI4K18+a+WVANxebjHAbMQRkGj7PmcmpBNhnyj59idxMejYi9wI0ANg4q5KAR2zVgJMzMq7tqAzGanLGCaTkZcQmHQGngSNtr4Bo3MCOnXqXwmY1KndAFPnfwYAVlA4IC4AAACQAwCdASpAAEAAPpFIoEwlpCMiIggAsBIJaQAAEDdTUAV4hbkAAP74zvV4AAAA"
         }else{
             var trackimg = track.image[1]["#text"]
         }
