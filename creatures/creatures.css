@@ -1,6 +1,10 @@
 body {
     margin: 0px;
     font-family: sans-serif;
+    border-image: url('/media/borderPattern.png') 16 / 2vh round;
+    image-rendering: pixelated;
+    color: #000000;
+    min-height: 100vh;
 }
 #char {
     display: flex;
@@ -16,11 +20,13 @@ body {
     margin: 0px;
     font-size: 2.25vh;
     text-align: left;
-    padding-left: 15px;
-    padding-top: 10px;
+    margin-left: 6px;
+    margin-right: 6px;
 }
 #header {
     position: absolute;
+    margin-left: calc(18px + 1vh);
+    margin-top: calc(18px + 1vh);
 }
 #return {
     margin: 0px;
@@ -28,8 +34,8 @@ body {
     font-size: 2.25vh;
     text-align: right;
     right: 0px;
-    padding-right: 15px;
-    padding-top: 10px;
+    margin-right: calc(22px + 1vh);
+    margin-top: calc(18px + 1vh);
 }
 #texto,#linkie {
     text-align: center;
@@ -39,6 +45,8 @@ body {
 }
 #linkie {
     text-decoration: underline;
+    margin-left: 4px;
+    margin-right: 4px;
 }
 a:link,a:visited {
     color: #000000;
@@ -48,5 +56,8 @@ a:hover,a:active {
 }
 #spinvid {
     width: 100vw;
+    padding-bottom: 30px;
     max-width: 42em;
+    z-index: -1;
+    image-rendering: auto;
 }
