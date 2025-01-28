@@ -14,7 +14,9 @@
     <link rel="stylesheet" href="/stylesheets/world.css">
     <script src="scripts/listening.js"></script>
     <script src="/scripts/randpos.js"></script>
-    <!-- spinning sphere made with https://www.3dgifmaker.com/LowPolyRotatingSphere thank you -->
+    <script src="/scripts/mf2fm.com.snowfall.js"></script>
+    <!-- snowfall js from  https://www.mf2fm.com/rv/dhtmlsnow.php -->
+    <!-- meta embed spinning sphere made with https://www.3dgifmaker.com/LowPolyRotatingSphere thank you -->
   </head>
 
   <body>
@@ -32,6 +34,182 @@
     </div>
     <a id="creatures" href="/creatures/obli">SEE OBLI AND OTHERS</a>
     <a id="tools" href="/tools">COOL COMPUTER TOOLS</a>
+    <div id="ampapp"></div>
+    <!-- Webamp Skins
+      Rollercoaster Tycoon skin from  https://archive.org/details/winampskin_RollerCoaster_Tycoon_Winamp_Skin
+      Nine Inch Nails Fragile skin from  https://archive.org/details/winampskin_NIN_The_Fragile
+      Haibane Renmei skin from https://archive.org/details/winampskin_haibane_renmei_rakka_by_misakichan
+    -->
+    <script src="https://unpkg.com/webamp"></script>
+    <script src="https://unpkg.com/butterchurn@2.6.7/lib/butterchurn.min.js"></script>
+    <script src="https://unpkg.com/butterchurn-presets@2.4.7/lib/butterchurnPresets.min.js"></script>
+    <script>
+        const app = document.getElementById("ampapp")
+        if(!Webamp.browserIsSupported()) {
+            alert("Oh no! Webamp does not work!")
+            throw new Error("What's the point of anything?")
+        }
+        const webamp = new Webamp({
+            windowLayout: {
+              main: {
+                position: { top: 0, left: 0 },
+                shadeMode: false,
+                closed: false,
+              },
+              equalizer: {
+                position: { top: 0, left: 0 },
+                shadeMode: true,
+                closed: true,
+              },
+              playlist: {
+                position: { top: 116, left: 0 },
+                shadeMode: false,
+                closed: false,
+              },
+              milkdrop: {
+                position: { top: 116*2, left: 0 }
+              },
+          },
+          __butterchurnOptions: {
+          importButterchurn: () => Promise.resolve(window.butterchurn),
+          getPresets: () => {
+            const presets = window.butterchurnPresets.getPresets();
+            return Object.keys(presets).map((name) => {
+              return {
+                name,
+                butterchurnPresetObject: presets[name],
+              };
+            });
+          },
+          butterchurnOpen: true,
+        },
+            initialSkin: {
+              url: "media/webampSkins/RollerCoaster_Tycoon_Winamp_Skin.wsz",
+            },
+            availableSkins: [
+              {
+                url: "media/webampSkins/RollerCoaster_Tycoon_Winamp_Skin.wsz",
+                name: "Rollercoaster Tycoon",
+              },
+              {
+                url: "media/webampSkins/NIN_The_Fragile.wsz",
+                name: "NIN Fragile",
+              },
+              {
+                url: "media/webampSkins/haibane_renmei_rakka_by_misakichan.wsz",
+                name: "Haibane Renmei Rakka",
+              },
+            ],
+            initialTracks: [
+              {
+                metaData: {
+                  artist: "Mike Morasky",
+                  title: "Robot Waiting Room #3",
+                },
+                url: "https://files.catbox.moe/t695xa.opus",
+                duration: 136,
+              },
+              {
+                metaData: {
+                  artist: "Jake Kaufman",
+                  title: "The Final Note",
+                },
+                url: "https://files.catbox.moe/94iitr.opus",
+                duration: 198,
+              },
+              {
+                metaData: {
+                  artist: "Dabu & Simon Swerwer",
+                  title: "Strike The Earth!",
+                },
+                url: "https://files.catbox.moe/8ai4qo.opus",
+                duration: 245,
+              },
+              {
+                metaData: {
+                  artist: "Disasterpeace",
+                  title: "Crossovers",
+                },
+                url: "https://files.catbox.moe/h7gb9d.opus",
+                duration: 182,
+              },
+              {
+                metaData: {
+                  artist: "From Grotto & Niilo Takalainen",
+                  title: "Holy Mountain Theme",
+                },
+                url: "https://files.catbox.moe/31r6qo.opus",
+                duration: 181,
+              },
+              {
+                metaData: {
+                  artist: "Go Ichinose",
+                  title: "Abandoned Lot of Dreams",
+                },
+                url: "https://files.catbox.moe/hjn02e.opus",
+                duration: 155,
+              },
+              {
+                metaData: {
+                  artist: "James Primate",
+                  title: "RW_7",
+                },
+                url: "https://files.catbox.moe/ntk4kv.opus",
+                duration: 138,
+              },
+              {
+                metaData: {
+                  artist: "Jiyuu no Tori",
+                  title: "Bird of Freedom",
+                },
+                url: "https://files.catbox.moe/60f3sl.opus",
+                duration: 111,
+              },
+              {
+                metaData: {
+                  artist: "Mike Morasky",
+                  title: "Thirty Seven After Six",
+                },
+                url: "https://files.catbox.moe/e2pl1q.opus",
+                duration: 146,
+              },
+              {
+                metaData: {
+                  artist: "Mudeth",
+                  title: "Esc (Arcade)",
+                },
+                url: "https://files.catbox.moe/wmc5cx.opus",
+                duration: 207,
+              },
+              {
+                metaData: {
+                  artist: "Rutger Zuydervelt",
+                  title: "Main Menu",
+                },
+                url: "https://files.catbox.moe/rmka1u.opus",
+                duration: 197,
+              },
+              {
+                metaData: {
+                  artist: "Tsuneo Imahori",
+                  title: "NOT AN ANGEL",
+                },
+                url: "https://files.catbox.moe/g2ypmq.opus",
+                duration: 177,
+              },
+              {
+                metaData: {
+                  artist: "dj TAKA ft. Erika Mochizuki",
+                  title: "MOON",
+                },
+                url: "https://files.catbox.moe/3dql3l.opus",
+                duration: 122,
+              },
+            ],
+          }
+        );
+        webamp.renderWhenReady(app);
+    </script>
     <div id="credit">
       <span>BACKGROUND ART BY</span>
       <a id="creditlink" target="_blank" href="https://windowsmillennium2000.tumblr.com/">
@@ -414,7 +592,7 @@
       <a id="buttn" onclick="this.remove()">
         <img src="media/stamps/yaoi2.png">
       </a>
-      <a id="buttn" target="_blank" href="https://windowsmillennium2000.tumblr.com/" onclick="this.remove()">
+      <a id="buttn" onclick="this.remove()">
         <img src="media/buttons2/carriononline.gif">
       </a>
     </div>

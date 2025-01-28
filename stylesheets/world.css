@@ -5,6 +5,12 @@
 body {
     margin: 0;
     animation: infinite linear alternate gay 1s;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    overflow: hidden;
 }
 img {
     image-rendering: pixelated;
@@ -17,6 +23,7 @@ img {
 #bgimg {
     max-height: 100vh;
     z-index: -1;
+    filter: drop-shadow(0 0 0.75rem rgb(255, 255, 255));
 }
 #killanim,#killbuttons {
     position: absolute;
@@ -74,16 +81,16 @@ img {
     height: 150px;
 }
 @keyframes gay {
-    0% {background: radial-gradient(#800000, #510fbd);}
-    100% {background: radial-gradient(#510fbd, #800000);}
+    0% {background: radial-gradient(#800020, #2c031a);}
+    100% {background: radial-gradient(#58001d, #2c031a);}
 }
 @keyframes fontcolor {
-    0% {color:blue;}
-    100% {color:red;}
+    0% {color:black;}
+    100% {color:#ff0055;}
 }
 @keyframes fontcolor2 {
-    0% {color:red;}
-    100% {color:blue;}
+    0% {color:#ff0055;}
+    100% {color:black;}
 }
 #lastfm { 
     z-index: 0;
@@ -119,6 +126,7 @@ img {
     background-position: left;
     width: 22px;
     height: 100%;
+    filter: drop-shadow(0 0 0.75rem rgb(255, 81, 0)) invert(100%);
 }
 #fireRight {
     rotate: 180deg;
@@ -132,4 +140,13 @@ img {
     background-position: right;
     width: 22px;
     height: 100%;
+    filter: drop-shadow(0 0 0.75rem rgb(255, 81, 0));
+}
+#ampapp {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 246px;
+    height: 245px;
+    transform: translate(-75px, 75px); 
 }
