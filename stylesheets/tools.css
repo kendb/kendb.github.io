@@ -1,12 +1,10 @@
 body {
-    background-color: rgb(243, 195, 229);
+    background-color: rgb(229, 211, 240);
     font-family: "verdana" !important;
     color: black;
 }
-#back {
-    position: fixed;
-    bottom: 2%;
-    right: 1%;
+a {
+    color: rgb(73, 40, 190);
 }
 #toptext {
     padding-left: 12px;
@@ -34,32 +32,57 @@ body {
     
 }
 #toolD {
-    font-size: 90%;
+    font-size: 75%;
     
 }
 #toolGeneral,#catGeneral {
-    background-color:rgba(251, 255, 0, 0.185);
+    background-color:rgba(0, 17, 255, 0.185);
 }
 #toolGame,#catGame {
-    background-color:rgba(255, 94, 0, 0.185);
+    background-color:rgba(0, 183, 255, 0.185);
 }
 #toolBrowser,#catBrowser {
-    background-color:rgba(174, 0, 255, 0.185);
+    background-color:rgba(0, 255, 149, 0.185);
 }
 #toolServer,#catServer {
-    background-color:rgba(255, 0, 64, 0.185);
-    
+    background-color:rgba(94, 255, 0, 0.185);
 }
-#toolGeneral,#toolGame,#toolBrowser,#toolServer {
+#toolVRChat,#catVRChat {
+    background-color:rgba(229, 255, 0, 0.185);
+}
+#winNotes,#catWinNotes {
+    background-color:rgba(255, 174, 0, 0.185);
+}
+#toolGeneral,#toolGame,#toolBrowser,#toolServer,#toolVRChat {
     margin: 6px;
     padding: 5px;
     overflow-y: scroll;
     height: 500px;
     scrollbar-width: thin;
-    border-radius: 10px;
     
 }
-#catGeneral,#catGame,#catBrowser,#catServer {
+#catGeneral,#catGame,#catBrowser,#catServer,#catVRChat,#catWinNotes {
     padding: 12px;
-    border-radius: 5px;
+}
+#winNotes {
+    max-width: 660px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+#mrNotes,#mrNotesSmall {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin: 0px;
+    font-size: 70%;
+}
+#mrNotes {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#mrNotesSmall {
+    font-size: 60%;
+    background-color:rgba(255, 174, 0, 0.185);
 }
