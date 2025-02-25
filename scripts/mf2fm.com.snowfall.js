@@ -64,6 +64,7 @@ function createDiv(height, width, colour) {
   div.style.width = width + "px";
   div.style.overflow = "hidden";
   div.style.backgroundColor = colour;
+  div.setAttribute("id", "snowdiv");
   return (div);
 }
 

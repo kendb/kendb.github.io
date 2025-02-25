@@ -4,4 +4,4 @@
     		<feDistantLight azimuth="3" elevation="123"></feDistantLight>
   	</feSpecularLighting>
   <feColorMatrix type="saturate" values="0" x="0%" y="0%" width="100%" height="100%" in="specularLighting" result="colormatrix"></feColorMatrix>
-</filter></defs><rect width="700" height="700" fill="transparent"></rect><rect width="700" height="700" fill="#ffffff" filter="url(#nnnoise-filter)"></rect></svg>
+</filter><filter id="blur"><feGaussianBlur stdDeviation="0.5" /></filter></defs><rect width="700" height="700" fill="transparent"></rect><rect width="700" height="700" fill="#ffffff" filter="url(#nnnoise-filter) url(#blur)"></rect></svg>
