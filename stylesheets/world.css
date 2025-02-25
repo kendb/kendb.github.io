@@ -3,8 +3,9 @@
     src: url('smash.ttf') format('truetype');
 }
 body {
+    background-image: url(/media/nnnoise2.svg);
     margin: 0;
-    animation: infinite linear alternate gay 1s;
+    animation: infinite alternate gay 1s steps(4, jump-both);
     user-select: none;
     -moz-user-select: none;
     -khtml-user-select: none;
@@ -21,6 +22,7 @@ img {
     justify-content: center;
 }
 #bgimg {
+    height: 100vh;
     max-height: 100vh;
     z-index: -1;
     filter: drop-shadow(0 0 0.75rem rgb(255, 255, 255));
@@ -81,8 +83,8 @@ img {
     height: 150px;
 }
 @keyframes gay {
-    0% {background: radial-gradient(#800020, #2c031a);}
-    100% {background: radial-gradient(#58001d, #2c031a);}
+    0% {background-color: #2c032ad5;}
+    100% {background-color: #5a1633d3;}
 }
 @keyframes fontcolor {
     0% {color:black;}

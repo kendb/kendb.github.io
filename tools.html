@@ -18,7 +18,7 @@
 
     <p id="toptext">buncha things i use often. i'm sure i'll remember more junk later zzz</p>
     <a href="/world" id="toptext">back to home</a>
-    <p id="toptext">updated: FEB-15-2025</p>
+    <p id="toptext">updated: FEB-25-2025</p>
     <br />
     <div style="display:flex; flex-wrap: wrap;">
       <a id="catGeneral" class="catLinks" href="#toolGeneral">general</a>
@@ -130,7 +130,15 @@
         </div> 
         <div id="liltool">
           <a id="toolT" href="https://github.com/localsend/localsend" target="_blank">localsend</a>
-          <p id="toolD">local file sharing program. was able to set it up with tailscale ip's for send files to friends directly. v fun</p>  
+          <p id="toolD">local file sharing program. was able to set it up with tailscale ip's to share files with friends directly. v fun</p>  
+        </div> 
+        <div id="liltool">
+          <a id="toolT" href="https://www.voidtools.com/support/everything/" target="_blank">everything</a>
+          <p id="toolD">file searching but awesome and i lovie</p>  
+        </div> 
+        <div id="liltool">
+          <a id="toolT" href="https://imagemagick.org/" target="_blank">imagemagick</a>
+          <p id="toolD">crazy that this does things that paid software cannot..</p>  
         </div> 
       </div>
       <div id="toolGame">
@@ -279,7 +287,7 @@
       <p id="mrNotes">shows last 3 power state events. my shit would wake up at like 3am/3pm every day and it drove me mad a little bit</p>
       <p id="mrNotesSmall">wevtutil qe System "/q:*[System [(EventID=1)][Provider[@Name='Microsoft-Windows-Power-Troubleshooter']]]" /f:text /c:3 /rd:True</p>
       <br />
-      <a id="mrNotes" href="https://gist.github.com/kendb/894aade8ce9e5ee665d1ccd9ca6d8f8b" target="_blank">script i made to stop tumblr from using webp for gifs</p>
+      <a id="mrNotes" href="https://gist.github.com/kendb/894aade8ce9e5ee665d1ccd9ca6d8f8b" target="_blank">script i made to stop tumblr from using webp for gifs</p></a>
       <a id="mrNotes" href="https://gist.github.com/kendb/5c5f898bd9eb12d6a7f6ee6f79d879f6" target="_blank">bad script to replace tumblr's explore/trending whatever tab because i dont like it i only touch the "For You" tab</p></a>
       <p id="mrNotes">yt-dlp config</p>
       <p id="mrNotesSmall">-P "C:\your\download\folder" --windows-filenames --trim-filenames 25 --restrict-filenames -o "%(title)s.%(epoch)s.%(ext)s" --exec "AFTER_MOVE:explorer /select, "</p>
@@ -287,6 +295,11 @@
       <p id="mrNotesSmall">ffmpeg -i Obli.mp4 -c:v libsvtav1 -vf scale=1080:1080 -preset 1 -g 300 -pix_fmt yuv420p -svtav1-params tune=0:film-grain=2:fast-decode=1:tile-columns=1 Obli_yuv420p.webm</p>
       <p id="mrNotes">command line yt-dlp passing to mpv i use for SAMMI. i have yt-dlp and mpv in my path env variables but you might be able to use sammi's working directory idk where that would be.</p>
       <p id="mrNotesSmall">yt --ignore-config --quiet --no-warnings --no-playlist -o - "/$realUrl$/" | mpv --really-quiet --keep-open=no --volume=30 --screen=1 --ontop=no --geometry=600x300 --force-seekable=yes -</p>
+      <br />
+      <a id="mrNotes" href="https://gist.github.com/kendb/567a5a84a025ac93105f7f0410ba0a03" target="_blank">my eq apo config for my sennheiser hd 6xx's</p></a>
+      <p id="mrNotes">imagemagick commands for the dithering on the main page</p>
+      <p id="mrNotesSmall">magick background.png -resize 20% -dither FloydSteinberg -colors 16 -posterize 4 background.gif</p>
+      <p id="mrNotesSmall">magick mogrify -dither FloydSteinberg -colors 64 -posterize 8 *.*</p>
       </div>
   </body>
   
