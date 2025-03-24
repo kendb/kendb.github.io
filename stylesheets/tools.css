@@ -6,7 +6,7 @@ body {
 a {
     color: rgb(73, 40, 190);
 }
-#toptext {
+#toptext,details {
     padding-left: 12px;
     padding-right: 12px;
     padding-top: 5px;
@@ -50,10 +50,13 @@ a {
 #toolVRChat,#catVRChat {
     background-color:rgba(229, 255, 0, 0.185);
 }
-#winNotes,#catWinNotes {
+#toolBlender,#catBlender {
     background-color:rgba(255, 174, 0, 0.185);
 }
-#toolGeneral,#toolGame,#toolBrowser,#toolServer,#toolVRChat {
+#winNotes,#catWinNotes {
+    background-color:rgba(255, 81, 0, 0.185);
+}
+#toolGeneral,#toolGame,#toolBrowser,#toolServer,#toolVRChat,#toolBlender {
     margin: 6px;
     padding: 5px;
     overflow-y: scroll;
@@ -61,16 +64,18 @@ a {
     scrollbar-width: thin;
     
 }
-#catGeneral,#catGame,#catBrowser,#catServer,#catVRChat,#catWinNotes {
+#catGeneral,#catGame,#catBrowser,#catServer,#catVRChat,#catWinNotes,#catBlender {
     padding: 12px;
 }
 #winNotes {
     max-width: 660px;
-    padding-top: 5px;
+    margin: 8px;
+    padding-top: 1px;
     padding-bottom: 15px;
     padding-left: 10px;
     padding-right: 10px;
-
+    outline: dotted rgba(0, 0, 0, 0.288) 1px;
+    outline-offset: -5px;
 }
 #mrNotes,#mrNotesSmall {
     padding-top: 3px;
@@ -84,5 +89,33 @@ a {
 }
 #mrNotesSmall {
     font-size: 60%;
-    background-color:rgba(255, 174, 0, 0.185);
+    background-color:rgba(255, 127, 53, 0.185);
+}
+#noteHeader {
+    margin: 0;
+    padding-top: 10px;
+    font-size: 90%;
+
+}
+details > ul > li {
+    margin: 0px;
+    list-style: none;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+details > ul {
+    margin: 4px;
+    background-color: rgb(209, 179, 228);
+    max-width: 400px;
+    padding-left: 4px;
+}
+#changeAdd {
+    background-color: #80ff006c;
+}
+#changeRemove {
+    background-color: #ff000088;
+}
+#changeReplace {
+    height: 100%;
+    background: linear-gradient(to right, #ff000088 25%, #80ff006c 65%);
 }
