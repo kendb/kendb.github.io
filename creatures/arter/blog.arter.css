@@ -1,0 +1,90 @@
+body {
+    background-image: url('blogbg.png');
+    background-repeat: repeat;
+    color: rgb(255, 203, 203);
+    font-family: Times, "Times New Roman", Georgia, serif;
+    font-size: 16px;
+}
+#blogBody {
+    padding: 16px;
+    background-color: rgba(255, 203, 203, 0.185);
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    backdrop-filter: blur(.1rem);
+    filter: drop-shadow(0 0 0.75rem rgb(82, 59, 59));
+}
+#entryList {
+    text-align: left;
+}
+a {
+    text-decoration: underline;
+    color: rgb(255, 163, 163);
+}
+#dayText {
+    margin: auto;
+    padding: 16px;
+    width: 400px;
+}
+#pictureBoxLeft {
+    width: 400px;
+    height: 384px;
+    text-align: left;
+    margin-left: 80px;
+    margin-right: auto;
+}
+#pictureBoxRight {
+    width: 400px;
+    height: 384px;
+    text-align: right;
+    margin-left: auto;
+    margin-right: 80px;
+}
+#picinTheBox {
+    position: absolute;
+}
+span {
+    text-align: center;
+}
+#spanLeft {
+    padding-top: 30px;
+    padding-left: 35px;
+    width: 350px;
+    position: absolute;
+    text-align: left;
+}
+#spanLeftComment {
+    padding: 10px;
+    padding-left: 12px;
+    width: 200px;
+    position: absolute;
+    font-size: 13px;
+    text-align: left;
+}
+#spanRight {
+    padding-top: 30px;
+    padding-right: 25px;
+    width: 350px;
+    position: absolute;
+    left: 135px;
+    text-align: right;
+}
+#spanRightComment {
+    padding: 10px;
+    padding-right: 12px;
+    width: 200px;
+    position: absolute;
+    font-size: 13px;
+    left: 300px;
+    text-align: right;
+}
+#hostingTag {
+    padding-top: 16px;
+}
+#mainEntry {
+    display: flex;
+    flex-direction: column;
+}
