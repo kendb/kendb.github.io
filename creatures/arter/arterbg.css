@@ -1,0 +1,9 @@
+body {
+    background: url(/creatures/arter/arterbg.avif);
+    background-position: center;
+    background-size: cover;
+}
+body,a,a:link,a:visited,a:link:active, :visited:active {
+    color: rgb(255, 167, 167);
+    text-shadow: 2px 2px 1px rgb(36, 4, 4),1px 1px 4px rgb(0, 0, 0); 
+}

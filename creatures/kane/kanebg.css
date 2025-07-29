@@ -1,0 +1,9 @@
+body {
+    background: url(/creatures/kane/kanebg.avif);
+    background-position: center;
+    background-size: cover;
+}
+body,a,a:link,a:visited,a:link:active, :visited:active {
+    color: rgba(255, 159, 196, 0.89);
+    text-shadow: 1px 1px 0px rgb(6, 85, 105); 
+}

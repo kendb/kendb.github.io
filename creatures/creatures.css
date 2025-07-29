@@ -2,36 +2,52 @@ body {
     margin: 0px;
     font-family: sans-serif;
     border-image: url('/media/borderPattern.png') 16 / 2vh round;
-    image-rendering: pixelated;
+    image-rendering: auto;
     color: #000000;
     min-height: 100vh;
+    display: flex;
+    justify-content: center;
 }
 #char {
     display: flex;
+    flex-basis: 100%;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
     align-items: center;
     align-content: stretch;
-    padding-top: 50px;
 }
 #headerlink {
     margin: 0px;
-    font-size: 2.25vh;
-    text-align: left;
     margin-left: 6px;
     margin-right: 6px;
+    text-align: center;
 }
 #header {
+    font-size: 18px;
     position: absolute;
-    margin-left: calc(18px + 1vh);
+    margin-left: calc(1px + 1vh);
     margin-top: calc(18px + 1vh);
+    max-width: 175px;
+}
+div#header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 100px;
+    position: absolute;
+}
+a#headerlink {
+    padding: 2px;
 }
 #return {
     margin: 0px;
     position: absolute;
-    font-size: 2.25vh;
+    font-size: 18px;
     text-align: right;
     right: 0px;
     margin-right: calc(22px + 1vh);
@@ -41,7 +57,8 @@ body {
     text-align: center;
     width: 60vw;
     max-width: 500px;
-    font-size: 2vh;
+    font-size: 18px;
+    margin: 20px;
 }
 #linkie {
     text-decoration: underline;
@@ -56,8 +73,18 @@ a:hover,a:active {
 }
 #spinvid {
     width: 100vw;
-    padding-bottom: 30px;
     max-width: 42em;
     z-index: -1;
-    image-rendering: auto;
+    image-rendering: auto !important;
+}
+.charName {
+    font-size: 28px !important;
+    font-weight: bold !important;
+}
+#infobox {
+    padding: 60px;
+}
+.linkTop {
+    flex-basis: 100%;
+    margin: 0;
 }
