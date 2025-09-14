@@ -40,7 +40,6 @@ img {
     position: fixed;
     transform-origin: center;
     z-index: 3;
-    filter: drop-shadow(0 0 0.1rem rgba(255, 255, 255, 0.432));
 }
 #oops {
     position: fixed;
@@ -153,10 +152,4 @@ img {
     width: 246px;
     height: 245px;
     transform: translate(-75px, 75px); 
-}
-#snowdiv {
-    filter: drop-shadow(0 0 10px rgb(255, 255, 255));
-}
-div#main-window,div#playlist-window,.gen-window {
-    filter: drop-shadow(0 0 0.1rem rgba(255, 255, 255, 0.432));
 }

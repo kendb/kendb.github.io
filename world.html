@@ -40,11 +40,8 @@
       Nine Inch Nails Fragile skin from  https://archive.org/details/winampskin_NIN_The_Fragile
       Haibane Renmei skin from https://archive.org/details/winampskin_haibane_renmei_rakka_by_misakichan
     -->
-    <script src="https://unpkg.com/webamp"></script>
-    <script src="https://unpkg.com/butterchurn@2.6.7/lib/butterchurn.min.js"></script>
-    <script src="https://unpkg.com/butterchurn-presets@2.4.7/lib/butterchurnPresets.min.js"></script>
-    <script>
-        const app = document.getElementById("ampapp")
+    <script type="module">
+        import Webamp from "https://unpkg.com/webamp@^2/butterchurn";
         if(!Webamp.browserIsSupported()) {
             alert("Oh no! Webamp does not work!")
             throw new Error("What's the point of anything?")
@@ -208,12 +205,12 @@
             ],
           }
         );
-        webamp.renderWhenReady(app);
+        webamp.renderWhenReady(document.getElementById("ampapp"));
     </script>
     <div id="credit">
       <span>BACKGROUND ART BY</span>
       <a id="creditlink" target="_blank" href="https://windowsmillennium2000.tumblr.com/">
-        <img src="media/buttons2/carriononline.gif"></a>
+        <img src="media/buttons2/carriononline.png"></a>
       <span>!!!</span>
     </div>
     <div id="lastfm">
@@ -227,151 +224,151 @@
     </div>
     <div id="buttonbar">
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons/3COOLSITE_01.gif">
+        <img src="media/buttons/3COOLSITE_01.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons/a41.gif">
+        <img src="media/buttons/a41.png">
       </a>
       <a id="buttn" onclick="this.remove()">
         <img src="media/buttons/affil.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons/bettercallsaul.gif">
+        <img src="media/buttons/bettercallsaul.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons/bitwarden.gif">
+        <img src="media/buttons/bitwarden.png">
       </a>
       <a id="buttn" onclick="this.remove()">
         <img src="media/buttons/btn7.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons/catsdrinking.gif">
+        <img src="media/buttons/catsdrinking.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons/cheezit.gif">
+        <img src="media/buttons/cheezit.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons/csbanner.gif">
+        <img src="media/buttons/csbanner.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons/divx.gif">
+        <img src="media/buttons/divx.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons/drp88x31.gif">
+        <img src="media/buttons/drp88x31.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons/ezgif_now.gif">
+        <img src="media/buttons/ezgif_now.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons/ezgif.gif">
+        <img src="media/buttons/ezgif.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons/ffmpeg.gif">
+        <img src="media/buttons/ffmpeg.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons/firefox3.gif">
+        <img src="media/buttons/firefox3.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons/firefox4.gif">
+        <img src="media/buttons/firefox4.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons/gamefly.gif">
+        <img src="media/buttons/gamefly.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons/gaysexnavigator.gif">
+        <img src="media/buttons/gaysexnavigator.png">
       </a>
       <a id="buttn" onclick="this.remove()">
         <img src="media/buttons/geezman.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons/gfaqs.gif">
+        <img src="media/buttons/gfaqs.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons/github.gif">
+        <img src="media/buttons/github.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons/hardcore-tanoc.gif">
+        <img src="media/buttons/hardcore-tanoc.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons/hellontheweb.gif">
+        <img src="media/buttons/hellontheweb.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons/ipv6.gif">
+        <img src="media/buttons/ipv6.png">
       </a>
       <a id="buttn" onclick="this.remove()">
         <img src="media/buttons/j3.jpg">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons/javascript2.gif">
+        <img src="media/buttons/javascript2.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons/miku.gif">
+        <img src="media/buttons/miku.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons/minecraft.gif">
+        <img src="media/buttons/minecraft.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons/mobiles.gif">
+        <img src="media/buttons/mobiles.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons/new-tab.gif">
+        <img src="media/buttons/new-tab.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons/nin.gif">
+        <img src="media/buttons/nin.png">
       </a>
       <a id="buttn" onclick="this.remove()">
         <img src="media/buttons/peee.jpg">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons/piss.gif">
+        <img src="media/buttons/piss.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons/soulseek.gif">
+        <img src="media/buttons/soulseek.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons/svenbutton.gif">
+        <img src="media/buttons/svenbutton.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons/tfnow.gif">
+        <img src="media/buttons/tfnow.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons/tj88x31.gif">
+        <img src="media/buttons/tj88x31.png">
       </a>
       <a id="buttn" onclick="this.remove()">
         <img src="media/buttons/blackmesa.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons/halfinbag.gif">
+        <img src="media/buttons/halfinbag.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons2/amd.gif">
+        <img src="media/buttons2/amd.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons2/cutesaul.gif">
+        <img src="media/buttons2/cutesaul.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons2/donate.gif">
+        <img src="media/buttons2/donate.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons2/email.gif">
+        <img src="media/buttons2/email.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons2/emailnow.gif">
+        <img src="media/buttons2/emailnow.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons2/emulatenow.gif">
+        <img src="media/buttons2/emulatenow.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons2/freebible.gif">
+        <img src="media/buttons2/freebible.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons2/freegifs.gif">
+        <img src="media/buttons2/freegifs.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons2/freemp3s.gif">
+        <img src="media/buttons2/freemp3s.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons2/gay.gif">
+        <img src="media/buttons2/gay.png">
       </a>
       <a id="buttn" onclick="this.remove()">
         <img src="media/buttons2/gooper.png">
@@ -389,73 +386,73 @@
         <img width="88" height="31" src="media/buttons2/kromernow.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons2/marioside.gif">
+        <img src="media/buttons2/marioside.png">
       </a>
       <a id="buttn" onclick="this.remove()">
         <img src="media/buttons2/money.jpg">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons2/mozillasexy.gif">
+        <img src="media/buttons2/mozillasexy.png">
       </a>
       <a id="buttn" onclick="this.remove()">
         <img src="media/buttons2/nintendopower.jpg">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons2/noclicky.gif">
+        <img src="media/buttons2/noclicky.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons2/nohentai.gif">
+        <img src="media/buttons2/nohentai.png">
       </a>
       <a id="buttn" onclick="this.remove()">
         <img src="media/buttons2/obama.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons2/osama.gif">
+        <img src="media/buttons2/osama.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons2/pictochat.gif">
+        <img src="media/buttons2/pictochat.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons2/privacy.gif">
+        <img src="media/buttons2/privacy.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons2/probenow.gif">
+        <img src="media/buttons2/probenow.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons2/quicktime6.gif">
+        <img src="media/buttons2/quicktime6.png">
       </a>
       <a id="buttn" onclick="this.remove()">
         <img src="media/buttons2/righttotrepair.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons2/shareware.gif">
+        <img src="media/buttons2/shareware.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons2/warningfree.gif">
+        <img src="media/buttons2/warningfree.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons2/websitesucks.gif">
+        <img src="media/buttons2/websitesucks.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons2/wiiiiii.gif">
+        <img src="media/buttons2/wiiiiii.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons2/win10no.gif">
+        <img src="media/buttons2/win10no.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons2/winkillmac.gif">
+        <img src="media/buttons2/winkillmac.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons2/winkillmac.gif">
+        <img src="media/buttons2/winkillmac.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons2/winps2.gif">
+        <img src="media/buttons2/winps2.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons2/wip.gif">
+        <img src="media/buttons2/wip.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/stamps/2d.gif">
+        <img src="media/stamps/2d.png">
       </a>
       <a id="buttn" onclick="this.remove()">
         <img src="media/stamps/3ds.jpg">
@@ -464,13 +461,13 @@
         <img src="media/stamps/avgn.jpg">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/stamps/blackops.gif">
+        <img src="media/stamps/blackops.png">
       </a>
       <a id="buttn" onclick="this.remove()">
         <img src="media/stamps/brokenhearts.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/stamps/computer.gif">
+        <img src="media/stamps/computer.png">
       </a>
       <a id="buttn" onclick="this.remove()">
         <img src="media/stamps/crowbar.png">
@@ -482,13 +479,13 @@
         <img src="media/stamps/dude.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/stamps/fire.gif">
+        <img src="media/stamps/fire.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/stamps/flipnote.gif">
+        <img src="media/stamps/flipnote.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/stamps/flytf2.gif">
+        <img src="media/stamps/flytf2.png">
       </a>
       <a id="buttn" onclick="this.remove()">
         <img src="media/stamps/fudanshi.png">
@@ -500,25 +497,25 @@
         <img src="media/stamps/happy.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/stamps/intruderalert.gif">
+        <img src="media/stamps/intruderalert.png">
       </a>
       <a id="buttn" onclick="this.remove()">
         <img src="media/stamps/j15.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/stamps/joel.gif">
+        <img src="media/stamps/joel.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/stamps/jumpstyle.gif">
+        <img src="media/stamps/jumpstyle.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/stamps/king.gif">
+        <img src="media/stamps/king.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/stamps/kirby.gif">
+        <img src="media/stamps/kirby.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/stamps/lovewins.gif">
+        <img src="media/stamps/lovewins.png">
       </a>
       <a id="buttn" onclick="this.remove()">
         <img src="media/stamps/lugia.png">
@@ -527,7 +524,7 @@
         <img src="media/stamps/lugia2.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/stamps/moji.gif">
+        <img src="media/stamps/moji.png">
       </a>
       <a id="buttn" onclick="this.remove()">
         <img src="media/stamps/moviedude.png">
@@ -539,40 +536,40 @@
         <img src="media/stamps/painis.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/stamps/petition.gif">
+        <img src="media/stamps/petition.png">
       </a>
       <a id="buttn" onclick="this.remove()">
         <img src="media/stamps/pwned.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/stamps/s3rl.gif">
+        <img src="media/stamps/s3rl.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/stamps/sexycat.gif">
+        <img src="media/stamps/sexycat.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/stamps/slimerancher.gif">
+        <img src="media/stamps/slimerancher.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/stamps/smell.gif">
+        <img src="media/stamps/smell.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/stamps/toby.gif">
+        <img src="media/stamps/toby.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/stamps/tool.gif">
+        <img src="media/stamps/tool.png">
       </a>
       <a id="buttn" onclick="this.remove()">
         <img src="media/stamps/warned.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/stamps/wepon.gif">
+        <img src="media/stamps/wepon.png">
       </a>
       <a id="buttn" onclick="this.remove()">
         <img src="media/stamps/wii.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/stamps/wii2.gif">
+        <img src="media/stamps/wii2.png">
       </a>
       <a id="buttn" onclick="this.remove()">
         <img src="media/stamps/withyou.gif">
@@ -590,7 +587,7 @@
         <img src="media/stamps/yaoi2.png">
       </a>
       <a id="buttn" onclick="this.remove()">
-        <img src="media/buttons2/carriononline.gif">
+        <img src="media/buttons2/carriononline.png">
       </a>
     </div>
   </body>
