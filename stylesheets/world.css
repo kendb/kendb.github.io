@@ -12,6 +12,7 @@ body {
     -webkit-user-select: none;
     -o-user-select: none;
     overflow: hidden;
+    
 }
 img {
     image-rendering: pixelated;
@@ -40,6 +41,7 @@ img {
     position: fixed;
     transform-origin: center;
     z-index: 3;
+    filter: hue-rotate(360deg);
 }
 #oops {
     position: fixed;
