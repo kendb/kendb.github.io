@@ -12,7 +12,6 @@ body {
     -webkit-user-select: none;
     -o-user-select: none;
     overflow: hidden;
-    
 }
 img {
     image-rendering: pixelated;
@@ -48,53 +47,66 @@ img {
     top: 4%;
     right: 5%;
 }
-#creatures {
-    font-family: cursive;
-    font-size: 200%;
-    text-shadow: 2px 2px black;
+#animButtons {
     position: fixed;
-    top: 10%;
-    left: 35vw;
-    animation: fontcolor2 alternate infinite linear 1s;
-    rotate: -25deg;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     z-index: 2;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
 }
-#tools {
-    font-family: cursive;
-    text-shadow: 2px 2px black;
-    font-size: 200%;
-    position: fixed;
-    top: 66%;
-    left: 35vw;
-    animation: fontcolor alternate infinite linear 1s;
-    rotate: 15deg;
-    z-index: 2;
+#yup {
+    position: relative;
+    height: 100vh;
+    width: 87vb;
+}
+#anim1 {
+    image-rendering: auto !important;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    max-width: 422px;
+    width: 40vb;
+    margin-top: 4vb;
+    margin-left: 3vb;
+}
+#anim2 {
+    image-rendering: auto !important;
+    margin-bottom: 7vb;
+    margin-right: 5vb;
+    position: absolute;
+    bottom: 1px;
+    right: 1px;
+    max-width: 371px;
+    width: 40vb;
 }
 #credit {
-    z-index: 2;
-    display: inline;
-    font-family: Smash;
-    color: rgb(255, 0, 0);
-    text-shadow: 1px 1px 1px black;
-    rotate: -5deg;
-    font-size: 200%;
+    image-rendering: auto !important;
+    z-index: 1;
     position: fixed;
-    bottom: 10px;
-    right: 5%;
-    width: 300px;
-    height: 150px;
+    bottom: 20px;
+    right: 30px;
+    width: 330px;
+}
+#creditlink {
+    animation: infinite normal wiggly 0.75s steps(3);
+    position: fixed;
+    rotate: -17deg;
+    bottom: 72px;
+    right: 63px;
+    width: 99px;
+    z-index: 2;
 }
 @keyframes gay {
     0% {background-color: #290423d5;}
     100% {background-color: #42021ed3;}
 }
-@keyframes fontcolor {
-    0% {color:black;}
-    100% {color:#ff0055;}
-}
-@keyframes fontcolor2 {
-    0% {color:#ff0055;}
-    100% {color:black;}
+@keyframes wiggly {
+    0% {rotate: -16deg;}
+    50% {rotate: -19deg;}
+    100% {rotate: -16deg;}
 }
 #lastfm { 
     z-index: 0;
@@ -112,7 +124,6 @@ img {
     font-size: 130%;
 }
 #lastfmlink {
-    animation: fontcolor alternate infinite linear 1s;
     font-size: 130%;
 }
 #lastfmimg {
