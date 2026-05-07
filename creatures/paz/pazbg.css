@@ -1,13 +1,13 @@
 body {
-    background: url(/creatures/kane/kanebg.avif);
+    background: url(/creatures/paz/pazbg.avif);
     background-position: center;
     background-size: cover;
 }
 body,a,a:link,a:link:active, :visited:active {
-    color: rgba(255, 159, 159, 0.89);
+    color: rgb(255, 238, 242);
     text-shadow: 
-    1px 1px 1px rgb(0, 41, 51),
+    1px 1px 1px rgb(126, 0, 34),
     1px 1px 4px rgb(0, 0, 0),
-    1px 1px 4px rgb(85, 44, 28); 
+    1px 1px 4px rgb(221, 212, 212); 
     
 }

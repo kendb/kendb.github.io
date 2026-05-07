@@ -18,16 +18,15 @@
     <a id="return" href="/world">[go back]</a>
     <div id="header">
       <p id="headerlink">characters:</p>
-      <a id="headerlink">arter</a>
+      <a id="headerlink" href="/creatures/arter">[arter]</a>
       <a id="headerlink" href="/creatures/obli">[obli]</a>
-      <a id="headerlink" href="/creatures/ipo">[ipo]</a>
       <br />
       <a id="headerlink" href="/creatures/ipo">[kane]</a>
       <a id="headerlink" href="/creatures/ipo">[paz]</a>
     </div>
     <div id="char">
       <div>
-        <p id="texto" style="font-size: 2.75vh;">template</p>
+        <p id="texto" style="font-size: 26px;">template</p>
         <p id="texto">pro/nouns - height - 
         <a href="https://ko-fi.com/s/0131a0147b" target="_blank">species</a>
         </p>
@@ -38,11 +37,27 @@
         <a id="linkie" href="spotify" target="_blank">[playlist]</a>
         <a id="linkie" href="https://www.tumblr.com/ooobli/tagged/template" target="_blank">[vrc pictures]</a>
       </div>
-      <video id="spinvid" type="video/mp4" muted autoplay loop>
-        <source src="/media/video/Template.webm" type="video/webm" />
-        <source src="/media/video/TemplateFallback.mp4" type="video/mp4" />
-        how does ur shit not support x264 video
-      </video>
+      <div id="vidarea">
+        <noscript> 
+          <p>javascript is disabled so if autoplaying muted videos is disabled, you can right click the spinning video to start it.</p>
+        </noscript>
+        <p id="vidwarning" hidden>click anywhere to play spinning video</p>
+        <video id="spinvid" type="video/webm" autoplay muted loop playsinline disablepictureinpicture>
+          <source src="/media/video/VIDEO" type="video/webm" />
+          your browser doesnt support vp9 video or video playback in general. frown
+        </video>
+            <script>
+              if (navigator.getAutoplayPolicy("mediaelement") === "disallowed" && document.querySelector("video").paused == true) {
+                document.getElementById("vidwarning").hidden = 0;
+                document.addEventListener("click", function (ea) {
+                  document.querySelector("video").play();
+                  document.getElementById("vidwarning").hidden = 1;
+                },
+                {once: true}
+                );
+              }
+            </script>
+      </div>
     </div>
   </body>
 </html>

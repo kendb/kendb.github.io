@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>creature: template</title>
-    <link rel="icon" href="/creatures/template/ico.png">
-    <meta name="description" content="the one that doesn't say much">
+    <title>creature: kane</title>
+    <link rel="icon" href="/creatures/icons/kane.webp">
+    <meta name="description" content="big stupid">
     <meta property="og:title" content="creature: kane">
-    <meta property="og:description" content="the one that doesn't say much">
+    <meta property="og:description" content="big stupid">
     <meta property="og:image" content="https://poop.pics/creatures/icons/kane.webp">
     <meta property="og:image:type" content="image/webp">
     <meta property="og:url" content="https://poop.pics/creatures/kane/">
@@ -21,7 +21,6 @@
       <p id="headerlink">characters:</p>
       <a id="headerlink" href="/creatures/arter">[arter]</a>
       <a id="headerlink" href="/creatures/obli">[obli]</a>
-      <a id="headerlink" href="/creatures/ipo">[ipo]</a>
       <a id="headerlink">kane</a>
       <a id="headerlink" href="/creatures/paz">[paz]</a>
     </div>
@@ -31,18 +30,34 @@
         <p id="texto">he/it - 6'8" - 
         <a href="https://ko-fi.com/s/1a4a7277a5" target="_blank">wickerbeast</a>
         </p>
-        <p id="texto">the silent giant type. WILL scarily hover behind you if someone's being rude to you.</p>
-        <p id="texto">texto</p>
-        <p id="texto">not much is finalized hehoo</p>
+        <p id="texto">the silent giant type. not the smartest cookie. wandered alone after a past life of constant brood conflict.</p>
+        <p id="texto">has to be reminded not to gnaw off the heads of those annoying him; joking kinda but it probably wouldn't stop him if you're particularly bothersome.</p>
+        <p id="texto">very protective of his bunch. considers Arter a pest.</p>
         <a id="linkie" style="text-decoration: none;">[rand link not done]</a>
         <a id="linkie" style="text-decoration: none;">[playlist not done]</a>
         <a id="linkie" href="https://www.tumblr.com/ooobli/tagged/kane" target="_blank">[vrc pictures]</a>
       </div>
-      <video id="spinvid" type="video/mp4" muted autoplay loop>
-        <source src="/media/video/Kane.webm" type="video/webm" />
-        <source src="/media/video/TemplateFallback.mp4" type="video/mp4" />
-        how does ur shit not support x264 video
-      </video>
+      <div id="vidarea">
+        <noscript> 
+          <p>javascript is disabled so if autoplaying muted videos is disabled, you can right click the spinning video to start it.</p>
+        </noscript>
+        <p id="vidwarning" hidden>click anywhere to play spinning video</p>
+        <video id="spinvid" type="video/webm" autoplay muted loop playsinline disablepictureinpicture>
+          <source src="/media/video/Kane.webm" type="video/webm" />
+          your browser doesnt support vp9 video or video playback in general. frown
+        </video>
+            <script>
+              if (navigator.getAutoplayPolicy("mediaelement") === "disallowed" && document.querySelector("video").paused == true) {
+                document.getElementById("vidwarning").hidden = 0;
+                document.addEventListener("click", function (ea) {
+                  document.querySelector("video").play();
+                  document.getElementById("vidwarning").hidden = 1;
+                },
+                {once: true}
+                );
+              }
+            </script>
+      </div>
     </div>
   </body>
 </html>

@@ -65,11 +65,14 @@ a#headerlink {
     margin-left: 4px;
     margin-right: 4px;
 }
-a:link,a:visited {
+a:link {
     color: #000000;
 }
+a:visited {
+    color: inherit;
+}
 a:hover,a:active {
-    color: #ffffff;
+    color: #ffffff !important
 }
 #spinvid {
     width: 100vw;
@@ -87,4 +90,9 @@ a:hover,a:active {
 .linkTop {
     flex-basis: 100%;
     margin: 0;
+}
+#vidwarning {
+    width: 100vw;
+    max-width: 42em;
+    position: absolute;
 }

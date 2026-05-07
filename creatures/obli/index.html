@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>creature: obli</title>
     <link rel="icon" href="/media/ico.webp">
-    <meta name="description" content="obli cat!!!!!!!!!!!!!!!!!!!!">
+    <meta name="description" content="weird cat weird.">
     <meta property="og:title" content="creature: obli">
-    <meta property="og:description" content="obli cat!!!!!!!!!!!!!!!!!!!!">
+    <meta property="og:description" content="weird cat weird.">
     <meta property="og:image" content="https://poop.pics/creatures/icons/obli.webp">
     <meta property="og:image:type" content="image/webp">
     <meta property="og:url" content="https://poop.pics/creatures/obli">
@@ -21,27 +21,44 @@
       <p id="headerlink">characters:</p>
       <a id="headerlink" href="/creatures/arter">[arter]</a>
       <a id="headerlink">obli</a>
-      <a id="headerlink" href="/creatures/ipo">[ipo]</a>
       <a id="headerlink" href="/creatures/kane">[kane]</a>
       <a id="headerlink" href="/creatures/paz">[paz]</a>
     </div>
     <div id="char">
       <div id="infobox">
-        <p id="texto" style="font-size: 2.75vh;">obli</p>
+        <p id="texto" class="charName">obli</p>
         <p id="texto">he/him - short - strange 
-        <a href="https://azukitiger.gumroad.com/l/mayu?ref=helloazuki" target="_blank">cat</a>
+        <a href="https://azukitiger.gumroad.com/l/mayu?ref=poop" target="_blank">cat</a>
         </p>
-        <p id="texto">reclusive and tired; trying his best to maintain his little life.</p>
-        <p id="texto">reserved but extremely sappy with the few that know him. (he loves them so much it's so weird)</p>
-        <p id="texto"></p>
-        <a id="linkie" style="text-decoration: none;">[his blog]</a>
-        <a id="linkie" style="text-decoration: none;">[playlist]</a>
+        <p id="texto">spectator-type cat; tends to quietly watch if in a new space or environment.</p>
+        <p id="texto">despite his reclusive nature, he tries his best to keep up the life he lives with those close to him.</p>
+        <p id="texto">foreign collar restricts a force residing inside him resulting in a runic pattern flowing across his gray fur. the ones that used to watch are unaware the collar is rather ineffective.</p>
+        <p id="texto">quite close to a beast named carrion. hopes he never sees arter ever again.</p>
+        <a id="linkie" href="https://va.media.tumblr.com/tumblr_tenw25gO1J1z421r0.mp4" target="_blank">[xenon and obli]</a>
+        <a id="linkie" style="text-decoration: none;">[playlist not done]</a>
         <a id="linkie" href="https://www.tumblr.com/ooobli/tagged/obli" target="_blank">[vrc pictures]</a>
       </div>
-      <video id="spinvid" type="video/webm" muted autoplay loop>
-        <source src="/media/video/Obli2M.webm" type="video/webm" />
-        how does ur shit not support x264 video
-      </video>
+      <div id="vidarea">
+        <noscript> 
+          <p>javascript is disabled so if autoplaying muted videos is disabled, you can right click the spinning video to start it.</p>
+        </noscript>
+        <p id="vidwarning" hidden>click anywhere to play spinning video</p>
+        <video id="spinvid" type="video/webm" autoplay muted loop playsinline disablepictureinpicture>
+          <source src="/media/video/Obli2M.webm" type="video/webm" />
+          your browser doesnt support vp9 video or video playback in general. frown
+        </video>
+            <script>
+              if (navigator.getAutoplayPolicy("mediaelement") === "disallowed" && document.querySelector("video").paused == true) {
+                document.getElementById("vidwarning").hidden = 0;
+                document.addEventListener("click", function (ea) {
+                  document.querySelector("video").play();
+                  document.getElementById("vidwarning").hidden = 1;
+                },
+                {once: true}
+                );
+              }
+            </script>
+      </div>
     </div>
   </body>
 </html>

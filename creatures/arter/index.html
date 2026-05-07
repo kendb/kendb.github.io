@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>creature: arter</title>
-    <link rel="icon" href="/media/ico.webp">
-    <meta name="description" content="weird evil freak guy">
+    <link rel="icon" href="/creatures/arter/arterico.png">
+    <meta name="description" content="loser wickerbeast">
     <meta property="og:title" content="creature: arter">
-    <meta property="og:description" content="weird evil freak guy">
+    <meta property="og:description" content="loser wickerbeast">
     <meta property="og:image" content="https://poop.pics/creatures/icons/arter.webp">
     <meta property="og:image:type" content="image/webp">
     <meta property="og:url" content="https://poop.pics/creatures/arter">
@@ -21,28 +21,44 @@
       <p id="headerlink" class="linkTop">characters:</p>
       <a id="headerlink">arter</a>
       <a id="headerlink" href="/creatures/obli">[obli]</a>
-      <a id="headerlink" href="/creatures/ipo">[ipo]</a>
       <a id="headerlink" href="/creatures/kane">[kane]</a>
       <a id="headerlink" href="/creatures/paz">[paz]</a>
     </div>
     <div id="char">
       <div id="infobox">
-        <p id="texto" class="charName" style="font-size: 2.75vh;">arter</p>
+        <p id="texto" class="charName">arter</p>
         <p id="texto">he/it - shorter than avg for a - 
         <a href="https://ko-fi.com/s/0131a0147b" target="_blank">wickerbeast</a>
         </p>
         <p id="texto">used to feel like he could eat the world; dumb pushover in the end.</p>
-        <p id="texto">if you can get past his annoying urge to wander alone, he'll open up a bit.</p>
-        <p id="texto">trapped in his mind, he listens to his loud music in his gay apartment.</p>
+        <p id="texto">trapped in his mind, he listens to his loud music in his gay apartment. if you can get past his annoying urge to wander alone, he'll open up a bit.</p>
+        <p id="texto">slowly realizing how much he regrets mindlessly working for the experimental arms division of a wartime organization.</p>
+        <p id="texto">although friendless for most of his stupid life, an alien called krypton is eating away at his perspectives.</p>
         <a id="linkie" href="/creatures/arter/blog">[his blog]</a>
         <a id="linkie" href="https://open.spotify.com/playlist/76MNlVJ5tMSkR5IDRR8Zen" target="_blank">[playlist]</a>
         <a id="linkie" href="https://www.tumblr.com/ooobli/tagged/arter" target="_blank">[vrc pictures]</a>
       </div>
-      <video id="spinvid" type="video/mp4" muted autoplay loop>
-        <source src="/media/video/Arter.webm" type="video/webm" />
-        <source src="/media/video/ArterFallback.mp4" type="video/mp4" />
-        how does ur shit not support x264 video
-      </video>
+      <div id="vidarea">
+        <noscript> 
+          <p>javascript is disabled so if autoplaying muted videos is disabled, you can right click the spinning video to start it.</p>
+        </noscript>
+        <p id="vidwarning" hidden>click anywhere to play spinning video</p>
+        <video id="spinvid" type="video/webm" autoplay muted loop playsinline disablepictureinpicture>
+          <source src="/media/video/Arter.webm" type="video/webm" />
+          your browser doesnt support vp9 video or video playback in general. frown
+        </video>
+            <script>
+              if (navigator.getAutoplayPolicy("mediaelement") === "disallowed" && document.querySelector("video").paused == true) {
+                document.getElementById("vidwarning").hidden = 0;
+                document.addEventListener("click", function (ea) {
+                  document.querySelector("video").play();
+                  document.getElementById("vidwarning").hidden = 1;
+                },
+                {once: true}
+                );
+              }
+            </script>
+      </div>
     </div>
   </body>
 </html>

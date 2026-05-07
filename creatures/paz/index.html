@@ -3,45 +3,63 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>creature: template</title>
-    <link rel="icon" href="/creatures/template/ico.png">
-    <meta name="description" content="">
-    <meta property="og:title" content="creature: template">
-    <meta property="og:description" content="">
-    <meta property="og:image" content="https://poop.pics/creatures/icons/template.webp">
+    <title>creature: paz</title>
+    <link rel="icon" href="/creatures/icons/paz.webp">
+    <meta name="description" content="what is this thing">
+    <meta property="og:title" content="creature: paz">
+    <meta property="og:description" content="what is this thing">
+    <meta property="og:image" content="https://poop.pics/creatures/icons/paz.webp">
     <meta property="og:image:type" content="image/webp">
-    <meta property="og:url" content="https://poop.pics/creatures/template">
+    <meta property="og:url" content="https://poop.pics/creatures/paz">
     <link rel="stylesheet" href="/creatures/creatures.css">
+    <link rel="stylesheet" href="/creatures/paz/pazbg.css">
   </head>
 
-  <body style="background-color: #ffffff;">
+  <body style="background-color: #ffe4ef;">
     <a id="return" href="/world">[go back]</a>
     <div id="header">
       <p id="headerlink">characters:</p>
       <a id="headerlink" href="/creatures/arter">[arter]</a>
       <a id="headerlink" href="/creatures/obli">[obli]</a>
-      <a id="headerlink" href="/creatures/ipo">[ipo]</a>
       <a id="headerlink" href="/creatures/kane">[kane]</a>
       <a id="headerlink">paz</a>
     </div>
     <div id="char">
       <div>
-        <p id="texto" style="font-size: 2.75vh;">paz</p>
-        <p id="texto">she/him - ~4ft - 
+        <p id="texto" class="charName">paz</p>
+        <p id="texto">she/her - ~4ft - 
         <a href="https://ko-fi.com/s/1a4a7277a5" target="_blank">jolteon</a>
         </p>
-        <p id="texto">texto</p>
-        <p id="texto">texto</p>
-        <p id="texto">texto</p>
-        <a id="linkie" href="">[rand link]</a>
-        <a id="linkie" href="spotify" target="_blank">[playlist]</a>
-        <a id="linkie" href="https://www.tumblr.com/ooobli/tagged/template" target="_blank">[vrc pictures]</a>
+        <p id="texto">psychic/electric-type weirdo. likes to do weird things with her weird friends. for her weird reasons. weird. pretty private.</p>
+        <p id="texto">values her space so it's best to not bother her lest you end up a cooked meat on the bone. zap zap. she'll probably bother you if she knows you though.</p>
+        <p id="texto">has been known to 
+          <a href="https://bulbapedia.bulbagarden.net/wiki/Shock_Wave_(move)#Description" target="_blank">shock</a> or 
+          <a href="https://bulbapedia.bulbagarden.net/wiki/Thunder_Wave_(move)#Description" target="_blank">thunder wave</a> her friends if she thinks it'll be funny.</p>
+        <a id="linkie" href="https://va.media.tumblr.com/tumblr_tenvyr9opU1z421r0.mp4" target="_blank">[being weird]</a>
+        <a id="linkie" href="https://open.spotify.com/playlist/2Hu8iOHMrbXPOLyWMux3M4" target="_blank">[playlist wip]</a>
+        <a id="linkie" href="https://www.tumblr.com/ooobli/tagged/paz" target="_blank">[vrc pictures]</a>
       </div>
-      <video id="spinvid" type="video/mp4" muted autoplay loop>
-        <source src="/media/video/Template.webm" type="video/webm" />
-        <source src="/media/video/TemplateFallback.mp4" type="video/mp4" />
-        how does ur shit not support x264 video
-      </video>
+      <div id="vidarea">
+        <noscript> 
+          <p>javascript is disabled so if autoplaying muted videos is disabled, you can right click the spinning video to start it.</p>
+        </noscript>
+        <p id="vidwarning" hidden>click anywhere to play spinning video</p>
+        <video id="spinvid" type="video/webm" autoplay muted loop playsinline disablepictureinpicture>
+          <source src="/media/video/Paz.webm" type="video/webm" />
+          your browser doesnt support vp9 video or video playback in general. frown
+        </video>
+            <script>
+              if (navigator.getAutoplayPolicy("mediaelement") === "disallowed" && document.querySelector("video").paused == true) {
+                document.getElementById("vidwarning").hidden = 0;
+                document.addEventListener("click", function (ea) {
+                  document.querySelector("video").play();
+                  document.getElementById("vidwarning").hidden = 1;
+                },
+                {once: true}
+                );
+              }
+            </script>
+      </div>
     </div>
   </body>
 </html>

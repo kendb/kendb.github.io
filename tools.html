@@ -18,10 +18,18 @@
 
     <p id="toptext">buncha things i use often. i'm sure i'll remember more junk later zzz</p>
     <p id="toptext">these are NOT in order of importance to me. very cool things may be at the bottom...</p>
+    <p id="toptext">i've been dipping my toes into linux with cachyos so i might add a section for that maybe</p>
     <a href="/world" id="toptext">back to home</a>
-    <p id="toptext">updated: DEC-15-2025</p>
+    <p id="toptext">updated: MAY-7-2026</p>
     <details>
       <summary style="cursor: pointer;">changelog</summary>
+      <ul>
+        <span>MAY-7-2026</span>
+        <li id="changeAdd">+ added dwmblurglass</li>
+        <li id="changeAdd">+ added ntsc-rs</li>
+        <li id="changeReplace">-+ changed spin ffmpeg notes</li>
+        <li id="changeRemove">- removed vrhandsframe</li>
+      </ul>
       <ul>
         <span>DEC-15-2025</span>
         <li id="changeAdd">+ added ratz</li>
@@ -253,10 +261,6 @@
           <p id="toolD">playable archive of almost every flash game and animation</p>  
         </div>
         <div id="liltool">
-          <a id="toolT" href="https://eurekaworks.jp/software/vrhandsframe/en/" target="_blank">vrhandsframe</a>
-          <p id="toolD">nifty vr overlay. translating text stuff locally is nice</p>  
-        </div>
-        <div id="liltool">
           <a id="toolT" href="https://store.steampowered.com/app/3243840/OVR_Dynamic_Resolution/" target="_blank">ovr dynamic resolution</a>
           <p id="toolD">yep</p>  
         </div>
@@ -271,6 +275,14 @@
         <div id="liltool">
           <a id="toolT" href="https://modmii.github.io/" target="_blank">modmii</a>
           <p id="toolD">easier wii modding</p>  
+        </div> 
+        <div id="liltool">
+          <a id="toolT" href="https://github.com/Maplespe/DWMBlurGlass" target="_blank">dwmblurglass</a>
+          <p id="toolD">global glass blur i lovie</p>  
+        </div> 
+        <div id="liltool">
+          <a id="toolT" href="https://github.com/ntsc-rs/ntsc-rs" target="_blank">ntsc-rs</a>
+          <p id="toolD">really neat ntsc/vhs artifacting. so neat that it can be used as a plugin</p>  
         </div> 
       </div>
       <div id="toolBrowser">
@@ -448,8 +460,10 @@
       <a id="mrNotes" href="https://gist.github.com/kendb/5c5f898bd9eb12d6a7f6ee6f79d879f6" target="_blank">bad script to replace tumblr's explore/trending whatever tab because i dont like it i only touch the "For You" tab</p></a>
       <p id="mrNotes">yt-dlp config</p>
       <p id="mrNotesSmall">-P "C:\your\download\folder" --windows-filenames --trim-filenames 25 --restrict-filenames -o "%(title)s.%(epoch)s.%(ext)s" --exec "AFTER_MOVE:explorer /select, "</p>
-      <p id="mrNotes">ffmpeg command for the spinning character vids ? lost my notes</p>
-      <p id="mrNotesSmall">ffmpeg -r 60 -i "Frame%04d.png" -c:v libvpx-vp9 -pix_fmt yuva420p -metadata:s:v:0 alpha_mode="1" blegh.webm</p>
+      <p id="mrNotes">ffmpeg command for the spinning character vids</p>
+      <p id="mrNotesSmall">ffmpeg -r 60 -i "Frame%04d.png" -c:v libvpx-vp9 -vf "scale=1000:1000" -b:v 2M -pass 1 -tile-columns 0 -frame-parallel 0 -g 9999 -auto-alt-ref 1 -deadline best -cpu-used 0 -pix_fmt yuva420p -metadata:s:v:0 alpha_mode="1" -f null NUL && ^ <br />
+ffmpeg -r 60 -i "Frame%04d.png" -c:v libvpx-vp9 -vf "scale=1000:1000" -b:v 2M -pass 2 -tile-columns 0 -frame-parallel 0 -g 9999 -auto-alt-ref 1 -deadline best -cpu-used 0 -pix_fmt yuva420p -metadata:s:v:0 alpha_mode="1" output.webm</p>
+      <p id="mrNotesSmall">Particles/Standard Unlit won't render over the alpha with unity recorder; use Particles/Standard Surface instead.</p>
       <p id="mrNotes">command line yt-dlp passing to mpv i use for SAMMI. i have yt-dlp and mpv in my path env variables but you might be able to use sammi's working directory idk where that would be.</p>
       <p id="mrNotesSmall">yt --ignore-config --quiet --no-warnings --no-playlist -o - "/$realUrl$/" | mpv --really-quiet --keep-open=no --volume=30 --screen=1 --ontop=no --geometry=600x300 --force-seekable=yes -</p>
       <br />
