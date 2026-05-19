@@ -82,6 +82,16 @@ img {
     max-width: 371px;
     width: 40vb;
 }
+#anim3 {
+    image-rendering: auto !important;
+    margin-bottom: 25vb;
+    margin-right: 3vb;
+    position: absolute;
+    bottom: 1px;
+    right: 1px;
+    max-width: 315px;
+    width: 40vb;
+}
 #credit {
     image-rendering: auto !important;
     z-index: 1;

@@ -39,25 +39,7 @@
         <a id="linkie" href="https://www.tumblr.com/ooobli/tagged/obli" target="_blank">[vrc pictures]</a>
       </div>
       <div id="vidarea">
-        <noscript> 
-          <p>javascript is disabled so if autoplaying muted videos is disabled, you can right click the spinning video to start it.</p>
-        </noscript>
-        <p id="vidwarning" hidden>click anywhere to play spinning video</p>
-        <video id="spinvid" type="video/webm" autoplay muted loop playsinline disablepictureinpicture>
-          <source src="/media/video/Obli2M.webm" type="video/webm" />
-          your browser doesnt support vp9 video or video playback in general. frown
-        </video>
-            <script>
-              if (navigator.getAutoplayPolicy("mediaelement") === "disallowed" && document.querySelector("video").paused == true) {
-                document.getElementById("vidwarning").hidden = 0;
-                document.addEventListener("click", function (ea) {
-                  document.querySelector("video").play();
-                  document.getElementById("vidwarning").hidden = 1;
-                },
-                {once: true}
-                );
-              }
-            </script>
+        <img id="spinvid" src="/media/spin/oblispin.avif">
       </div>
     </div>
   </body>
